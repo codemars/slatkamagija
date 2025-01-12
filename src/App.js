@@ -13,7 +13,7 @@ import Torta from "./pages/Recipe/Torta";
 
 function App() {
   return (
-    <Router basename="/Slatka-Magija">
+    <Router>
       <Routes>
 
         <Route path="/" element={<Home />} />
