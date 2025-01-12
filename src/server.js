@@ -12,8 +12,8 @@ app.listen(5000, () => console.log("Server Running"));
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: "markojh13@gmail.com",
-      pass: "aaem fjze orzg fudb",
+      user: process.env.REACT_APP_USER,
+      pass:process.env.REACT_APP_PASSWORD,
     },
   });
   
