@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Sentinel'; /* Naziv fonta */
+  src: url('../assets/fonts/FontsFree-Net-Sentinel-Medium.ttf'); 
+}
+
+/* Header CSS */
+header .navbar {
+  position: absolute;
+  width: 100%;
+  background-color: transparent; 
+  z-index: 1000;
+  transition: top 0.3s; /* Animacija za sakrivanje */
+}
+
+header .navbar.sticky {
+  position: fixed;
+  left: 0;
+  top: 0; 
+  background-color: #fff3d9; 
+  box-shadow: 0 2px 3px rgba(96, 96, 96, 0.1);
+}
+
+header .navbar.hidden {
+  top: -140px;
+  transition: 0.5s;
+}
+
+header .navbar.visible {
+  top: 0; 
+  transition: 0.5s;
+}
+
+header .logo img {
+  width: auto;
+  max-width: inherit;
+  max-height: 80px;
+}
+
+header .nav-link {
+  display: inline-flex;
+  justify-content: center;
+  color: #F54E4A;
+  padding: 0 0.8rem !important;
+  font-size: 1.6rem;
+  font-family: 'Sentinel', sans-serif;
+  text-transform: uppercase;
+  transition: all 15ms ease-in-out;
+}
+
+header .nav-link:hover {
+  color: lightcoral;
+}
+
+header .sticky .nav-link {
+  color: red;
+}
+
+.animated-link {
+  position: relative;
+  text-decoration: none;
+
+}
+
+.animated-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; 
+  background-color: #F54E4A; 
+  transition: width 0.5s ease; 
+}
+
+.animated-link:hover::after {
+  width: 90%; 
+}
+
+header .cart {
+  position: relative;
+  top: -0.4375rem;
+}
+
+/* Media Query CSS */
+@media (max-width: 992px) {
+  header .navbar {
+    background-color: #fff3d9;
+    opacity: .8;
+  }
+  header .navbar-toggler {
+    border: none;
+  }
+  header .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  header .navbar-toggler-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  header .nav-link {
+    color: black;
+    padding: 1rem !important;
+  }
+
+  header .logo img {
+    max-height: 70px;
+  }
+}
