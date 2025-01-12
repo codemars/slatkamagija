@@ -60,9 +60,7 @@ const Section1 = () => {
     <div className="contact1">
       <div className="background-image"></div>
       <div className="container-contact1">
-        <div className="contact1-pic js-tilt" data-tilt>
-          <img src={contact} alt="IMG" />
-        </div>
+       
         <div className="contact-info">
           <div className="icon-container">
             <span>
@@ -89,7 +87,9 @@ const Section1 = () => {
             </div>
           </div>
         </div>
-
+        <div className="contact1-pic js-tilt" data-tilt>
+          <img src={contact} alt="IMG" />
+        </div>
 
         <form className="contact1-form validate-form" ref={form} onSubmit={sendEmail}>
           <span className="contact1-form-title">KONTAKTIRAJTE NAS</span>

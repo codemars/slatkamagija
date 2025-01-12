@@ -1,493 +1,234 @@
-
-
-
 /*//////////////////////////////////////////////////////////////////
-[ Contact 1 ]*/
+[ Modernizovana Kontakt Sekcija - Slika i Tekst ]*/
 
+/* Osnovna sekcija */
 .contact1 {
-    width: 100%;
-    min-height: 100%;
-    padding-top: 150px;
-    padding-bottom: 210px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4; /* Svetla pozadina za moderan izgled */
+  position: relative;
+  padding: 120px 20px;
+  font-family: 'Sentinel', sans-serif;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/background/background1-min.webp') center/cover no-repeat;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+/* Glavni kontejner */
+.container-contact1 {
+  max-width: 1200px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Slika sekcija */
+.contact1-pic {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact1-pic img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease-in-out;
+}
+
+.contact1-pic img:hover {
+  transform: scale(1.05); /* Efekat zumiranja na hover */
+}
+
+/* Tekstualne sekcije */
+.contact-info, .contact-email {
   
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.contact-info:hover, .contact-email:hover {
+  transform: translateY(-5px); /* Suptilno podizanje */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Povećana senka */
+}
+
+.icon-container, .icon-container-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: #ffefef; /* Svetlo crvena nijansa */
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container i, .icon-container-email i {
+  font-size: 24px;
+  color: #ff4c4c; /* Crvena boja za isticanje ikone */
+}
+
+.additional-text, .additional-text-email {
   
-  .background-image {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url('../assets/background/background1-min.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1; /* Postavljanje z-index na manje od nule */
-    opacity: 0.8; /* Postavljanje prozirnosti po potrebi */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.additional-text h4, .additional-text-email h4 {
+  font-family: 'Sentinel', sans-serif;
+  font-size: 20px;
+  margin: 0 0 5px;
+  color: #333;
+  font-weight: 600;
+}
+
+.additional-text p, .additional-text-email p {
+  font-family: 'Sentinel', sans-serif;
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+/* Forma sekcija */
+.contact1-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact1-form-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.wrap-input1 {
+  position: relative;
+  width: 100%;
+}
+
+.input1 {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input1:focus {
+  border-color: #ff4c4c;
+  background: #fff;
+}
+
+textarea.input1 {
+  min-height: 150px;
+  resize: none;
+}
+
+.container-contact1-form-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.contact1-form-btn {
+  background: #ff4c4c;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.contact1-form-btn:hover {
+  background: #e63e3e;
+  transform: scale(1.05);
+}
+
+/* Responzivnost */
+
+/* Tableti */
+@media (max-width: 992px) {
   .container-contact1 {
-    width: 1263px;
-    background: lightgray;
-    border-radius: 10px;
-    overflow: hidden;
-   
-  
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  
-    padding: 90px 60px 88px 148px;
+      grid-template-columns: 1fr;
+      text-align: center;
   }
-  
-  /*------------------------------------------------------------------
-  [  ]*/
+
   .contact1-pic {
-    width: 296px;
-    margin-bottom: 100px;
-    position: relative;
+      margin-bottom: 20px;
   }
-  
-  .contact1-pic img {
-    max-width: 100%;
-    margin-top: -250px;
+
+  .contact-info, .contact-email {
+      margin: 0 auto;
   }
-  
-  .contact-info {
-    position: absolute;
-   display: flex;
-    left: 22%;
-    top: 65%;
+}
+
+/* Telefoni */
+@media (max-width: 768px) {
+  .contact-info, .contact-email {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
-  
-  .icon-container {
-    margin-right: 15px; /* Prilagodite razmak između ikone i teksta */
+
+  .icon-container, .icon-container-email {
+      margin-bottom: 10px;
   }
-  
-  .icon-container span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px; /* Prilagodite veličinu ikone */
-    height: 60px; /* Prilagodite veličinu ikone */
-   
-    
+}
+
+@media (max-width: 576px) {
+  .contact1 {
+      padding: 100px 15px;
   }
-  
-  .icon-container i {
-    font-size: 50px; /* Prilagodite veličinu ikone */
-    color: #6b6b6b; /* Prilagodite boju ikone */
-    margin-top: 35px;
-  }
-  
-  .additional-text {
-    
-    color: #333; /* Prilagodite boju teksta */
-    
-  }
-  
-  .additional-text h4 {
-    font-family: 'Sentinel', sans-serif;
-    margin-bottom: 1px; /* Prilagodite razmak između naslova i teksta */
-    font-size: 28px;
-  }
-  
-  .additional-text p {
-    font-family: 'Sentinel', sans-serif;
-    margin: 0; /* Uklonite unapred postavljeni margin za <p> element */
-    font-size: 28px;
-  }
-  
-  
-  
-  .contact-email {
-    position: absolute;
-   display: flex;
-    left: 22%;
-    top: 75%;
-  }
-  
-  .icon-container-email {
-    margin-right: 15px; /* Prilagodite razmak između ikone i teksta */
-  }
-  
-  .icon-container-email span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px; /* Prilagodite veličinu ikone */
-    height: 60px; /* Prilagodite veličinu ikone */
-   
-    
-  }
-  
-  .icon-container-email i {
-    font-size: 50px; /* Prilagodite veličinu ikone */
-    color: #6b6b6b; /* Prilagodite boju ikone */
-    margin-top: 35px;
-  }
-  
-  .additional-text-email {
-    font-family: 'Sentinel', sans-serif;
-    color: #333; /* Prilagodite boju teksta */
-    
-  }
-  
-  .additional-text-email h4 {
-    font-family: 'Sentinel', sans-serif;
-    margin-bottom: 1px; /* Prilagodite razmak između naslova i teksta */
-    font-size: 28px;
-  }
-  
-  .additional-text-email p {
-    font-family: 'Sentinel', sans-serif;
-    margin: 0; /* Uklonite unapred postavljeni margin za <p> element */
-    font-size: 28px;
-  }
-  
-  /*------------------------------------------------------------------
-  [  ]*/
-  .contact1-form {
-    width: 550px;
-    margin-left: 130px;
-  }
-  
+
   .contact1-form-title {
-    display: block;
-    font-family: 'Sentinel', sans-serif;
-    font-size: 35px;
-    color: #333333;
-    line-height: 1.2;
-    text-align: center;
-    padding-bottom: 44px;
+      font-size: 24px;
   }
-  
-  input.input1 {
-    height: 50px;
-    border-radius: 25px;
-    padding: 0 30px;
-  }
-  input.input1 + .shadow-input1 {
-    border-radius: 25px;
-  }
-  
-  textarea.input1 {
-    min-height: 150px;
-    border-radius: 25px;
-    padding: 12px 30px;
-  }
-  textarea.input1 + .shadow-input1 {
-    border-radius: 25px;
-  }
-  
-  /*---------------------------------------------*/
-  .wrap-input1 {
-    position: relative;
-    width: 100%;
-    z-index: 1;
-    margin-bottom: 20px;
-  }
-  
+
   .input1 {
-    display: block;
-    width: 100%;
-    background: #e6e6e6;
-    font-family: 'Sentinel', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #666666;
+      font-size: 14px;
   }
-  
-  .shadow-input1 {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 0px 0px;
-    color: rgba(231, 17, 17, 0.5);
-  }
-  
-  .input1:focus + .shadow-input1 {
-    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
-    animation: anim-shadow 0.5s ease-in-out forwards;
-  }
-  
-  @-webkit-keyframes anim-shadow {
-    to {
-      box-shadow: 0px 0px 80px 30px;
-      opacity: 0;
-    }
-  }
-  
-  @keyframes anim-shadow {
-    to {
-      box-shadow: 0px 0px 80px 30px;
-      opacity: 0;
-    }
-  }
-  
-  /*---------------------------------------------*/
-  .container-contact1-form-btn {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
+
   .contact1-form-btn {
-    min-width: 193px;
-    height: 50px;
-    border-radius: 25px;
-    background: red ;
-    font-family: 'Sentinel', sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #fff;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 25px;
-  
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
+      padding: 8px 20px;
+      font-size: 14px;
   }
-  
-  .contact1-form-btn i {
-    margin-left: 7px;
-  
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-  
-  .contact1-form-btn:hover {
-    background: #da4949;
-  }
-  
-  .contact1-form-btn:hover i {
-    -webkit-transform: translateX(10px);
-    -moz-transform: translateX(10px);
-    -ms-transform: translateX(10px);
-    -o-transform: translateX(10px);
-    transform: translateX(10px);
-  }
-  
-  
-  
-  
-  /*------------------------------------------------------------------
-  [ Responsive ]*/
-  
-  @media (max-width: 1453px) { 
-    .contact-info {
-      left: 13%;
-    }
-  
-    .contact-email {
-      left: 13%;
-    }
-  }
-  
-  
-  @media (max-width: 1200px) {
-    .contact1-pic {
-      width: 33.5%;
-    }
-  
-    .contact1-form {
-      width: 47%;
-    }
-  
-    
-  .contact-info {
-    
-    left: 17%;
-    top: 85%;
-  }
-  .contact-email {
-    
-    left: 17%;
-    top: 75%;
-  }
-  
-  
-  .icon-container i {
-    font-size: 40px; /* Prilagodite veličinu ikone */
-    color: #6b6b6b; /* Prilagodite boju ikone */
-    margin-top: 35px;
-  }
-  
-  
-  .additional-text h4 {
-   
-    font-size: 22px;
-  }
-  
-  .additional-text p {
-   
-    font-size: 22px;
-  }
-  
-  .icon-container-email i {
-    font-size: 40px; /* Prilagodite veličinu ikone */
-    color: #6b6b6b; /* Prilagodite boju ikone */
-    margin-top: 35px;
-  }
-  
-  
-  .additional-text-email h4 {
-  
-    font-size: 22px;
-  }
-  
-  .additional-text-email p {
-    
-    font-size: 22px;
-  }
-  
-  
-   
-    
-  }
-  
-  @media (max-width: 992px) {
-    .container-contact1 {
-      padding: 90px 80px 88px 90px;
-    }
-  
-    .contact1-pic {
-      width: 25%;
-    }
-  
-    .contact1-form {
-      width: 55%;
-    }
-  
-    .contact-info {
-    
-      left: 8%;
-      top: 80%;
-    }
-    .contact-email {
-      
-      left: 8%;
-      top: 70%;
-    }
-    
-    
-    
-  }
-  @media (max-width: 822px) {
-    .contact1-pic {
-      width: 20%;
-    }
-  
-    .contact-info {
-    
-      left: 2%;
-      top: 80%;
-    }
-    .contact-email {
-      
-      left: 2%;
-      top: 70%;
-    }
-    
-  }
-  
-  @media (max-width: 768px) {
-    .container-contact1 {
-      padding: 90px 100px 88px  0px;
-    }
-  
-    .contact1-pic {
-      display: none;
-    }
-  
-    .contact1-form {
-      width: 100%;
-      padding-top: 90px;
-    }
-  
-    .contact-info {
-      top: 20%;
-      left: 28%;
-      margin-bottom: 100px;
-  
-    }
-    .contact-email {
-      top: 30%;
-      left: 28%;
-      margin-bottom: 100px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .container-contact1 {
-      padding: 90px 50px 88px 0px;  
-    }
-  }
-  
-  @media (max-width: 430px) {
-    .container-contact1 {
-      position: relative;
-      width: 404px;
-      padding-left: -50;
-      padding-right: 200px;
-      padding-left: -50;
-      margin-left: 10px;
-      margin-right: 10px;
-  
-  
-     
-    }
-  
-    .contact1-form {
-      position: relative;
-      width: 450%;
-      right: 90px;
-      padding-top: 130px;
-    }
-  
-    .contact-info {
-      top: 5%;
-      left: 2%;
-      margin-bottom: 100px;
-  
-    }
-    .contact-email {
-      top: 15%;
-      left: 2%;
-      margin-bottom: 100px;
-    }
-  }
-  
-  
-  
+}
