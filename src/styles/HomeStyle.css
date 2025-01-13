@@ -24,23 +24,7 @@
   }
 }
 
-.hero_section .badge_text {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.hero_section .badge_text .h4_xs {
-  font-size: 1.875rem;
-  font-weight: 600;
-  line-height: 1;
-  
-}
-.hero_section .badge_text .h3_lg {
-  font-size: 2.875rem;
-  font-weight: 600;
-  line-height: 1;
-}
+
 .hero_section .hero_text h1 {
 
   font-family: var(--lilita-font);
@@ -58,7 +42,7 @@
 }
 .hero_section .hero_text p {
   padding: 0 ;
-  font-size: 25px;
+  font-size: 1.3rem;
   
 }
 
@@ -78,12 +62,12 @@
   width: 100%;
 }
 .about_section h2 {
-  font-size: 3.5rem;
+  font-size: 1.5rem;
 }
 .about_section p {
   color: black;
   padding: 20px 30px;
-  font-size: 26px;
+  font-size: 1.3rem;
 }
 .about_wrapper {
   background: #DDE2DC;
@@ -108,7 +92,7 @@
   }
 }
 .about_box h4 {
-  font-size: 26px;
+  font-size: 1.5rem;
   line-height: 1;
   letter-spacing: 0.5008px;
   margin-top: 30px;
@@ -116,9 +100,7 @@
 }
 .about_box p {
   padding: 0 30px;
-  
-
-  font-size: 26px;
+  font-size: 1.3rem;
 }
 
 
@@ -228,7 +210,7 @@
   background: var(--light-grey);
 }
 .promotion_section h2 {
-  font-size: 3.25rem;
+  font-size: 2.1rem;
   margin-bottom: 25px;
 }
 
@@ -238,11 +220,9 @@
 	
 }
 .promotion_section p {
-  font-size: 1.425rem;
+  font-size: 1.4rem;
 }
-.promotion_section ul {
-  padding-left: 15px;
-}
+
 
 .promotion {
   height: 100px ; 
@@ -266,19 +246,19 @@
   background-repeat: no-repeat;
 }
 .shop_section h4 {
-  font-size: 2.275rem;
+  font-size: 1.275rem;
   font-weight: 400;
   color: var(--bg-coffee);
 }
 .shop_section h2 {
-  font-size: 3.7rem;
+  font-size: 3.0rem;
   font-weight: 700;
   letter-spacing: -1px;
   color: var(--bg-coffee);
 }
 .shop_section p {
-  font-size: 1.725rem;
-  padding-right: 10%;
+  font-size: 1.4rem;
+  
   color: var(--bg-coffee);
   margin-bottom: 40px;
 }
@@ -360,30 +340,6 @@
   overflow: hidden;
 
 }
-.blog_section .user_img img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 100%;
-  margin-bottom: 55px;
-}
-.blog_section .carousel.slide .carousel-inner .carousel-caption p {
-  font-size: 1.7rem;
-  line-height: 1.45;
-  font-weight: 400;
-  padding: 0 12%;
-  margin-bottom: 25px;
-  color: black;
-}
-.blog_section .carousel.slide .carousel-inner .carousel-caption .item_rating i {
-  color: var(--yellow);
-  margin-right: 5px;
-}
-.blog_section .carousel.slide .carousel-inner .carousel-caption h5 {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  color: black;
-}
 
 
 /* Home Sok 8.0 */
@@ -412,7 +368,7 @@
 }
 .juice_section p {
   font-size: 1.525rem;
-  padding-right: 10%;
+ 
   color: var(--bg-coffee);
   margin-bottom: 10px;
   
@@ -441,25 +397,26 @@
 footer {
   
   background-color: #FDF2D9;
-  padding-top: 100px;
+  padding-top: 90px;
+  
 }
 footer h5 {
   font-family: 'Sentinel', sans-serif;
   color: var(--light-red);
   line-height: 1;
-  margin-bottom: 25px;
-  font-size: 30px;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
 }
 
 
 footer p {
   font-family: 'Sentinel', sans-serif;
   margin-bottom: 3px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 footer .calling {
   
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 800;
   color: var(--light-red)
 }
@@ -470,12 +427,11 @@ footer .calling:hover {
 footer ul li {
   
   display: inline-block;
-  margin-right: 20px;
-  font-size: 4rem;
+  margin-right: 10px;
   cursor: pointer; 
 }
 footer ul li i {
-  font-size: 3.5rem;
+  font-size: 2.3rem;
   color: lightcoral;
   transition: color 0.3s ease-in-out;
 }
@@ -490,13 +446,14 @@ footer .copy_right {
   border-top: 1px solid var(--light-grey-2);
   margin-top: 60px;
   padding: 20px 0;
+  
 }
 footer .copy_right ul li span {
   color: var(--light-red);
   font-weight: 600;
+  font-size: 0.9rem;
 }
 footer .copy_right ul li {
-  font-size: 1rem;
   padding: 0 10px;
   position: relative;
 }
@@ -703,19 +660,17 @@ footer img {
 @media (max-width: 992px) {
   /* Home About 2.0 */
   .about_section h2 {
-    font-size: 1.9rem;
+    font-size: 18px;
   }
   .about_section p {
     padding: 20px 0;
-    font-size: 1.5rem;
+    font-size: 16px;
   }
   .about_box p {
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 16px;
   }
-  .promotion_section h2 {
-    font-size: 2rem;
-  }
+ 
 
   /* Home Parallax 5.0 */
   .bg_parallax_scroll {
@@ -740,7 +695,7 @@ footer img {
   }
   .shop_section p {
     font-size: 1.5rem;
-    margin-left: 35px;
+   
   }
   .brand_section {
     padding: 50px 0 10px;
@@ -928,6 +883,10 @@ footer img {
 }
 
 @media (max-width: 460px)  { 
+  .hero_section img {
+    margin-bottom: 2.5rem;
+    
+  }
   .floating-image1 {
     animation: floatUpDown 8s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
     position: relative;
@@ -1012,25 +971,61 @@ footer img {
 
 }
 
+.shop_section {
+  padding-top: 20px;
+}
+
+
+.shop_section p {
+  font-size: 1.2rem;
+}
+
+.shop_section h4 {
+  font-size: 1.2rem;
+}
+
+.shop_section h2 {
+  font-size: 2rem;
+}
+
+.promotion_section {
+  padding-bottom: 20px;
+
+}
+
 .promotion_section p {
-  font-size: 1.57rem;
-  margin-left: -15px;
-  margin-right: -15px;
+  font-size: 1.2rem;
+  
 }
 
 .promotion_section h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 
 }
 
 .juice_section p {
-  margin-left: 35px;
+ 
+  font-size: 1.2rem !important;
+}
+
+.juice_section h2 {
+  font-size: 2rem !important;
 }
 
 .brand_img {
   margin-top: -10px;  
   margin-left: -1px;
   
+}
+
+.bg_parallax_scroll {
+  background: url("../assets/background/family-min.webp") no-repeat center center;
+  
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 100%;
+  height: 300px;
 }
 }
 

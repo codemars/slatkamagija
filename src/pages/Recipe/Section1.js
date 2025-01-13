@@ -22,7 +22,7 @@ const Section1 = () => {
               <div className="product-box-layout1">
                 <figure className="item-figure">
                   <a href="#">
-                    <Link to="/Recipe/Kiflice">
+                    <Link to="/Recepti/Kiflice">
                       <img src={kiflice} alt="Product" />
                     </Link>
                   </a>
@@ -49,66 +49,7 @@ const Section1 = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <div className="product-box-layout1">
-                <figure className="item-figure">
-                  <a href="#">
-                    <Link to="/Recipe/Kiflice">
-                      <img src={kiflice} alt="Product" />
-                    </Link>
-                  </a>
-                </figure>
-                <div className="item-content">
-
-                  <h3 className="item-title">
-                    <Link to="/Recipe/Palacinke">
-                      Magicne palacinke sa mlcnim kremom
-                    </Link>
-                  </h3>
-
-                  <p>
-                    Ukusne palacinke s mlecnim kremom - savršen slatki zalogaj za svaku priliku!
-                  </p>
-                  <ul className="entry-meta">
-                    <li>
-                      <a href="#">
-                        <i className="fas fa-clock"></i>15 Mins
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <div className="product-box-layout1">
-                <figure className="item-figure">
-                  <a href="#">
-                    <Link to="/Recipe/Kiflice">
-                      <img src={kiflice} alt="Product" />
-                    </Link>
-                  </a>
-                </figure>
-                <div className="item-content">
-
-                  <h3 className="item-title">
-                    <Link to="/Recipe/Torta">
-                      Magicne tortica sa dzemom od sipurka
-                    </Link>
-                  </h3>
-
-                  <p>
-                    Ukusna torta s džemom - savršen slatki zalogaj za svaku priliku!
-                  </p>
-                  <ul className="entry-meta">
-                    <li>
-                      <a href="#">
-                        <i className="fas fa-clock"></i>15 Mins
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+           
 
           </div>
         </div>

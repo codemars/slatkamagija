@@ -20,7 +20,7 @@ const Section1 = () => {
               <p className="text-white pt-2 pb-4">
               Naši proizvodi su rezultat tradicionalnih recepata obogaćenih obiljem ljubavi, što čini jedinstvenu slatku magiju u svakom zalogaju.
               </p>
-              <Link to="/OurStory" className="btn order_now">
+              <Link to="/NasaPrica" className="btn order_now">
                 O Nama  
               </Link>
             </div>

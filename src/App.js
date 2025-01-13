@@ -6,8 +6,7 @@ import Story from "./pages/Story/Story";
 import Contact from "./pages/Contact/Contact";
 import Recipe from "./pages/Recipe/Recipe";
 import Kiflice from "./pages/Recipe/Kiflice";
-import Palacinke from "./pages/Recipe/Palacinke";
-import Torta from "./pages/Recipe/Torta";
+
 
 
 
@@ -17,13 +16,12 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home />} />
-        <Route path="/Products" element={<Products />} />
-        <Route path="/OurStory" element={<Story />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Recipe" element={<Recipe />} />
-        <Route path="/Recipe/Kiflice" element={<Kiflice />} /> 
-        <Route path="/Recipe/Palacinke" element={<Palacinke />} /> 
-        <Route path="/Recipe/Torta" element={<Torta />} /> 
+        <Route path="/Proizvodi" element={<Products />} />
+        <Route path="/NasaPrica" element={<Story />} />
+        <Route path="/Kontakt" element={<Contact />} />
+        <Route path="/Recepti" element={<Recipe />} />
+        <Route path="/Recepti/Kiflice" element={<Kiflice />} /> 
+
      
        
       </Routes>

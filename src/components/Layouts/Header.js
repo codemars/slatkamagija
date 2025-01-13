@@ -53,16 +53,16 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link className="animated-link" as={Link} to="/Products">
+              <Nav.Link className="animated-link" as={Link} to="/Proizvodi">
                 Proizvodi
               </Nav.Link>
-              <Nav.Link className="animated-link" as={Link} to="/Recipe">
+              <Nav.Link className="animated-link" as={Link} to="/Recepti">
                 Recepti
               </Nav.Link>
-              <Nav.Link className="animated-link" as={Link} to="/OurStory">
+              <Nav.Link className="animated-link" as={Link} to="/NasaPrica">
                 Naša priča
               </Nav.Link>
-              <Nav.Link className="animated-link" as={Link} to="/Contact">
+              <Nav.Link className="animated-link" as={Link} to="/Kontakt">
                 Kontakt
               </Nav.Link>
             </Nav>
