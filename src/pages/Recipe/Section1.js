@@ -30,7 +30,7 @@ const Section1 = () => {
                 <div className="item-content">
 
                   <h3 className="item-title">
-                    <Link to="/Recipe/Kiflice">
+                    <Link to="/Recepti/Kiflice">
                       Magicne kiflice sa dzemom od sipurka
                     </Link>
                   </h3>

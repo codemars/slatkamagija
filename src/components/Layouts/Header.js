@@ -59,9 +59,9 @@ const Header = () => {
               <Nav.Link className="animated-link" as={Link} to="/Recepti">
                 Recepti
               </Nav.Link>
-              <Nav.Link className="animated-link" as={Link} to="/NasaPrica">
+             {/*  <Nav.Link className="animated-link" as={Link} to="/NasaPrica">
                 Naša priča
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link className="animated-link" as={Link} to="/Kontakt">
                 Kontakt
               </Nav.Link>

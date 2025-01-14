@@ -1,20 +1,30 @@
-import React from "react";
+import React, { useEffect }  from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import litle_girl from "../../assets/background/little-girl-having-her-breakfast-min.webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Section4() {
+  useEffect(() => {
+    AOS.init({
+  duration: 1000, 
+  easing: "ease-in-out", 
+  once: true, 
+  mirror: false,
+    });
+  }, []);
   return (
     <>
       <section className="promotion_section">
         <Container>
           <Row className="align-items-center">
             <Col lg={6} className="text-center mb-5 mb-lg-0">
-              <img src={litle_girl} className="img-fluid promotion" alt="Promotion" />
+              <img src={litle_girl} className="img-fluid promotion" alt="Promotion" data-aos="fade-right"/>
             </Col>
             <Col lg={6} className="px-5">
               <h2>NIŠTA NE SPAJA LJUDE KAO DOMAĆI UŽICI</h2>
             
-              <ul>
+              <ul data-aos="zoom-in" >
                 <li>
                   <p>
                   Zamislite jutro uz miris svežeg hleba i naše voćne sokove, dan pun slatkih džemova koji upotpunjuju svaki trenutak. Ova priča traje kroz svaki trenutak dana.

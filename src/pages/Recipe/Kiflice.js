@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "../../components/Layouts/Layout";
 import kiflice from "../../assets/recipe/kiflice.webp";
-
+import { useNavigate } from "react-router-dom"; 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Recipe1 = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Layout>
@@ -13,7 +14,12 @@ const Recipe1 = () => {
             <div className="row gutters-60">
               <div className="col-lg-12">
                 <div className="single-recipe-layout1">
-                  <h1 className="item-title left">
+                <h1 className="item-title left">
+                    <i
+                      className="fas fa-arrow-left arrow-icon"
+                      onClick={() => navigate(-1)}
+                      style={{ cursor: "pointer", marginRight: "10px", color: "black", fontSize: "27px" }}
+                    ></i>
                     Magicne kiflice sa dzemom od sipurka
                   </h1>
                   <div className="row mb-4 left">
@@ -25,10 +31,7 @@ const Recipe1 = () => {
                             2024
                           </a>
                         </li>
-                        <li className="single-meta">
-                          <i className="fas fa-user"></i>by{" "}
-                          <span>Marko Djokic</span>
-                        </li>
+                        
                       </ul>
                     </div>
                   </div>
@@ -47,24 +50,12 @@ const Recipe1 = () => {
                               <div className="feature-title">
                                 Vreme pripreme
                               </div>
-                              <div className="feature-sub-title">45 Mins</div>
+                              <div className="feature-sub-title">45 Min</div>
                             </div>
                           </div>
                         </div>
                       </li>
-                      <li>
-                        <div className="feature-wrap">
-                          <div className="media">
-                            <div className="feature-icon">
-                              <i className="fas fa-utensils"></i>
-                            </div>
-                            <div className="media-body space-sm">
-                              <div className="feature-title">COOK TIME</div>
-                              <div className="feature-sub-title">45 Mins</div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
+                   
                       <li>
                         <div className="feature-wrap">
                           <div className="media">
@@ -78,19 +69,7 @@ const Recipe1 = () => {
                           </div>
                         </div>
                       </li>
-                      <li>
-                        <div className="feature-wrap">
-                          <div className="media">
-                            <div className="feature-icon">
-                              <i className="far fa-eye"></i>
-                            </div>
-                            <div className="media-body space-sm">
-                              <div className="feature-title">VIEWS</div>
-                              <div className="feature-sub-title">3,450</div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
+                    
                     </ul>
                   </div>
                   <p className="item-description">
@@ -112,12 +91,12 @@ const Recipe1 = () => {
                           </h3>
 
                           <ul class="ingredient-list">
-                            <li>1 cup sifted all purpose flour</li>
-                            <li>4 cup roasted macadamia nuts</li>
-                            <li>4 large eggs</li>
-                            <li>4 cup roasted macadamia nuts</li>
-                            <li>5 cup sifted all purpose flour</li>
-                            <li>8 cup roasted macadamia nuts</li>
+                            <li>300ml ulja</li>
+                            <li>150ml vruce vode</li>
+                            <li>1 prasak za pecivo</li>
+                            <li>cca 500g brasna</li>
+                            <li>cca 200g secera u prahu</li>
+                            <li>1 vanilin secer</li>
                           </ul>
                         </div>
                       </div>
@@ -129,24 +108,13 @@ const Recipe1 = () => {
                     <div className="section-heading heading-dark">
                       <h2 className="item-heading">Upustvo za pripremu</h2>
                     </div>
-                    <p className="section-paragraph">
-                      Salamander lied porpoise much over tightly circa horse
-                      taped so innocuously side crudey mightily rigorous plot
-                      life. New homes in particular are subject. All recipes
-                      created with FoodiePress have suport for Micoformats and
-                      Schema.org is a collaboration byo improve convallis.
-                    </p>
+                   
                     <div className="direction-box-layout1">
                       <div className="item-content">
                         <div className="serial-number">Korak 1</div>
                         <p>
-                          Recipe View
-                          <span className="item-time">
-                            <i className="far fa-clock"></i>5 Minutes
-                          </span>{" "}
-                          chemaorg is a collaboration improve the web by creat
-                          inegaera structured markupinn ocuously side crudey
-                          mightily rigorous plot life.
+                  
+                          Ukljucite rernu na 200 stepeni.
                         </p>
                       </div>
                     </div>
@@ -154,13 +122,8 @@ const Recipe1 = () => {
                       <div className="item-content">
                         <div className="serial-number">Korak 2</div>
                         <p>
-                          Recipe View
-                          <span className="item-time">
-                            <i className="far fa-clock"></i>5 Minutes
-                          </span>{" "}
-                          chemaorg is a collaboration improve the web by creat
-                          inegaera structured markupinn ocuously side crudey
-                          mightily rigorous plot life.
+                         
+                          Pomesajte vodu i ulje, sipajte prasak za pecivo i promesajte pa dodajte brasno postepeno mesajuci najpre kasikom a zatim i rukom.
                         </p>
                       </div>
                     </div>
@@ -168,13 +131,8 @@ const Recipe1 = () => {
                       <div className="item-content">
                         <div className="serial-number">Korak 3</div>
                         <p>
-                          Recipe View
-                          <span className="item-time">
-                            <i className="far fa-clock"></i>5 Minutes
-                          </span>{" "}
-                          chemaorg is a collaboration improve the web by creat
-                          inegaera structured markupinn ocuously side crudey
-                          mightily rigorous plot life.
+                          
+                          Testo podelite na 3-4 loptice (ja sam na 2 i dobila sam 16 vecih kiflica, ali mamine male su sladje) pa na pobrasnjenoj dasci najpre rukom oblikujte spljosteni krug a zatim rastanjite oklagijom. Stavite na svaki deo po malo marmelade (ja stavila fenomenalni argentinski sir od dunja) i motajte kiflice koje redjate na pleh sa pek papirom i odmah pecete dok ne porumene. Ako vam se testo lista samo pritisnite prstom tu i tamo; kiflice budu ‘rosave’ kad se ispeku, ali secer to lepo prekrije.
                         </p>
                       </div>
                     </div>
@@ -182,13 +140,8 @@ const Recipe1 = () => {
                       <div className="item-content">
                         <div className="serial-number">Korak 4</div>
                         <p>
-                          Recipe View
-                          <span className="item-time">
-                            <i className="far fa-clock"></i>5 Minutes
-                          </span>{" "}
-                          chemaorg is a collaboration improve the web by creat
-                          inegaera structured markupinn ocuously side crudey
-                          mightily rigorous plot life.
+                        
+                          Vruce kiflice valjajte u prah secer pomesan sa vanilinim secerom.
                         </p>
                       </div>
                     </div>

@@ -54,54 +54,76 @@
 }
 
 .item-figure1 img {
-    width: 550px;
-		height: 350px;
-		margin-left: 350px;
+    width: 350px;
+	height: 350px;
+	display: block;
+	margin: 1rem auto;
 	margin-bottom: 20px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 	
    
+}
+.arrow-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arrow-icon:hover {
+    transform: translateX(-5px); 
+    color: #007bff; 
+}
+
+
+.section-heading {
+	margin-left: 5rem;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
 }
 
 @media (max-width: 1198px) {
 	.item-figure1 img {
-		margin-left: 210px;
+		display: block;
+		margin: 1rem auto;
 	}
 }
 
 @media (max-width: 991px) {
 	.item-figure1 img {
-		margin-left: 90px;
+		
 	}
 }
 @media (max-width: 767px) {
 	.item-figure1 img {
-		margin-left: 22px;
-		width: 500px;
+		display: block;
+		margin: 1rem auto;
+		width: 300px;
 		height: 320px;
 	}
 }
 @media (max-width: 541px) {
 	.item-figure1 img {
-		margin-left: 65px;
-		
+		display: flex;
+		justify-content: center;
 		width: 300px;
-		height: 180px;
+		height: 320px;
 	}
 }
 @media (max-width: 420px) {
 	.item-figure1 img {
-		margin-left: 20px;
 		
-		width: 300px;
-		height: 180px;
+		display: flex;
+		justify-content: center;
+
+		width: 280px;
+		height: 250px;
 	}
 }
 @media (max-width: 353px) {
 	.item-figure1 img {
-		margin-left: 15px;
+		display: block;
+		margin: 1rem auto;
 		
-		width: 250px;
-		height: 130px;
+		width: 200px;
+		height: 250px;
 	}
 }
 
@@ -448,10 +470,10 @@
 }
 
 .single-recipe-layout1 .item-feature ul {
-	margin-left: -1px;
-	margin-right: -1px;
+	
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .single-recipe-layout1 .item-feature ul li {
@@ -478,8 +500,8 @@
 
 .single-recipe-layout1 .item-feature ul li .feature-wrap {
 	background-color: #f2f2f2;
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	
 }
 
 .single-recipe-layout1 .item-feature ul li .media {
@@ -511,7 +533,7 @@
 }
 
 .single-recipe-layout1 .item-description {
-	font-size: 25px;
+	font-size: 1.2rem;
 	color: #444444;
 	line-height: 1.8;
 	font-weight: 500;
@@ -558,7 +580,7 @@
 }
 
 .item-title {
-    
+    font-size: 2rem;
     margin-bottom: 10px;
     color: #333;
 }
@@ -590,7 +612,7 @@
 
 
 .single-recipe-layout1 .direction-wrap-layout1 .section-paragraph {
-	font-size: 25px;
+	font-size: 1.2rem;
 	color: #444444;
 	margin-bottom: 40px;
 }
@@ -675,7 +697,7 @@
 
 .single-recipe-layout1 .direction-wrap-layout1 .direction-box-layout1 .item-content p {
 	color: #444444;
-	font-size: 22px;
+	font-size: 1.2rem;
 	font-weight: 500;
 	margin-bottom: 0;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import pot from "../../assets/image/pot.png";
@@ -13,6 +13,8 @@ import peach from "../../assets/fruit/peach.webp";
 import apricot from "../../assets/fruit/apricot.webp";
 import plum1 from "../../assets/fruit/plum1.webp";
 import plum2 from "../../assets/fruit/plum2.webp";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 // Mock Data Cards
 const mockData = [
@@ -35,6 +37,12 @@ const mockData = [
 ];
 
 function Section2() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+     
+    });
+  }, []);
   return (
     <>
       <section className="about_section">
@@ -42,12 +50,12 @@ function Section2() {
           <Row>
             <Col lg={{ span: 8, offset: 2 }} className="text-center">
            
-              <h2>Pun ukus tradicije za prave znalce  </h2>
-              <p>
+              <h2 data-aos="zoom-in">Pun ukus tradicije za prave znalce  </h2>
+              <p data-aos="zoom-in">
               U svaku teglicu unosimo pažljivo odabrane sastojke i prstohvat modernog pristupa. Čuvamo duh tradicije dok gledamo ka budućnosti, stvarajući potpuno prirodne proizvode za zdrav i dug život.
               </p>
-              <Link to="/NasaPrica" className="btn order_now btn_red">
-                Naša priča
+              <Link to="/Proizvodi" className="btn order_now btn_red">
+                Magični proizvodi
               </Link>
             <div>
               <img src={plum1} alt="Plum" className="img-fluid floating-image8" />
@@ -68,7 +76,7 @@ function Section2() {
       </section>
       <section className="about_wrapper">
         <Container>
-          <Row className="justify-content-md-center">
+          <Row className="justify-content-md-center" data-aos="fade-up">
             
             {mockData.map((cardData, index) => (
               <Col md={6} lg={4} className="mb-4 mb-md-0" key={index}>

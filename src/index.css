@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* Root Variables */
 :root {
   /* Fonts Family */

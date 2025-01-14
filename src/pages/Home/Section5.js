@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
 import hleb from "../../assets/hleb.png";
 import rosehip1 from "../../assets/fruit/rosehip1.webp";
 import rosehip2 from "../../assets/fruit/rosehip2.webp";
@@ -10,12 +11,19 @@ import apricot from "../../assets/fruit/apricot.webp";
 import orange from "../../assets/fruit/orange1.webp";
 
 function Section5() {
+   useEffect(() => {
+      AOS.init({
+    duration: 1000, 
+    once: false, 
+    mirror: true,
+      });
+    }, []);
   return (
     <>
       <section className="shop_section">
         <Container>
           <Row className="align-items-center py-5">
-            <Col lg={6} className="text-center text-lg-start mb-5 mb-lg-0">
+            <Col lg={6} className="text-center text-lg-start mb-5 mb-lg-0" data-aos="fade-right">
               <h4>Osvježavajući razlog za jutarnji osmijeh</h4>
               <h2>Začarajte dan sa svakim zalogajem hleba...</h2>
               <p>
@@ -27,7 +35,7 @@ function Section5() {
               </p>
             </Col>
             <Col lg={6}>
-              <img src={hleb} alt="hleb" className="img-fluid" />
+              <img src={hleb} alt="hleb" className="img-fluid" data-aos="fade-left"/>
             </Col>
           </Row>
         </Container>
