@@ -17,7 +17,7 @@ function Section4() {
               <ul>
                 <li>
                   <p>
-                  Zamislite jutro uz miris svežeg hleba i naših voćnih sokova, i dan ispunjen slatkim džemovima koji prate svaki trenutak. Ova priča počinje jutros i traje do večeri.
+                  Zamislite jutro uz miris svežeg hleba i naše voćne sokove, dan pun slatkih džemova koji upotpunjuju svaki trenutak. Ova priča traje kroz svaki trenutak dana.
                   </p>
                 </li>
                 <li>

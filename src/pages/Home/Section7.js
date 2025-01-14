@@ -12,13 +12,7 @@ function Section7() {
             <h4>Dobar razlog za osveženje</h4>
             <h2>Uz čašu svežeg soka...</h2>
             <p>
-              S pažnjom biramo i pakujemo voće koje će oplemeniti vaše
-              osvežavajuće trenutke. Bez obzira da li preferirate kiselkasti
-              ukus narandže, slatkoću jagoda ili svežinu limuna, Magicni
-              džemovi su idealan dodatak vašem omiljenom soku. Uživajte u
-              harmoniji voćnih aroma koje će vaše osveženje učiniti još
-              ukusnijim. Svaki gutljaj nosi sa sobom notu tradicije i ljubavi
-              prema prirodnim ukusima.
+              S pažnjom biramosamo najbolje voće, pažljivo ga pakujemo i stvaramo savršen spoj za vaše osvežavajuće trenutke. Bilo da uživate u kiselkastom ukusu narandže, slatkoći jagoda ili osvežavajućem limunu, naši sokovi su idealan dodatak vašem danu. Uživajte u harmoniji voćnih aroma koje čine svaki gutljaj još ukusnijim. Svaka kap nosi sa sobom notu tradicije i ljubavi prema prirodnim ukusima.
             </p>
           </Col>
           <Col lg={5}>

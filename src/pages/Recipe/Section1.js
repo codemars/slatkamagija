@@ -35,10 +35,7 @@ const Section1 = () => {
                     </Link>
                   </h3>
 
-                  <p>
-                    Ukusne kiflice s džemom - savršen slatki zalogaj za svaku
-                    priliku!
-                  </p>
+                 
                   <ul className="entry-meta">
                     <li>
                       <a href="#">

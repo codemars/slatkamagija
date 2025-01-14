@@ -213,6 +213,10 @@
   font-size: 2.1rem;
   margin-bottom: 25px;
 }
+.promotion_section ul {
+  padding-left: 0;
+}
+
 
 .promotion_section img {
   border-radius: 15px;
@@ -220,7 +224,7 @@
 	
 }
 .promotion_section p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 
@@ -996,6 +1000,10 @@ footer img {
 .promotion_section p {
   font-size: 1.2rem;
   
+}
+
+.promotion_section ul {
+  padding-left: 0;
 }
 
 .promotion_section h2 {

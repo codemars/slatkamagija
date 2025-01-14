@@ -48,7 +48,7 @@ const Section1 = () => {
         <Container>
           <Row className="align-items-center py-5">
             <Col lg={6} className="order-lg-2 text-center text-lg-start mb-5 mb-lg-0">
-              <h4>Čarobni Užitak Svaki Put uz Našu magičnu Marmelada</h4>
+              <h4>Čarobni Užitak Svaki Put uz Našu magičnu Marmeladu</h4>
               <h2>Magija Šipurka i Mešanog Voća u Svakom Zalogaju.</h2>
               <p>
               Uz naše čarobne marmelade, doživite pravu magiju ukusa koja dolazi iz spoja divljeg šipurka i mešanog voća. "Divlja Slatkoća" od šipurka očarava divljom prirodom, dok "Šareni Delikates" donosi čaroliju raznovrsnih voćnih aroma. Ova magična voćna putovanja predstavljaju harmoniju tradicionalnih recepata, stvarajući čarobni raj za vaša nepca.  

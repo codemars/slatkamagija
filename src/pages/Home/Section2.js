@@ -44,7 +44,7 @@ function Section2() {
            
               <h2>Pun ukus tradicije za prave znalce  </h2>
               <p>
-              U svaku teglicu ubacujemo mudrost i umeće naših baka i prstohvat modernog doba. Brinemo o tradiciji, ali gledamo u budućnost i zato proizvodimo samo potpuno prirodnu hranu za zdrav i dug život.
+              U svaku teglicu unosimo pažljivo odabrane sastojke i prstohvat modernog pristupa. Čuvamo duh tradicije dok gledamo ka budućnosti, stvarajući potpuno prirodne proizvode za zdrav i dug život.
               </p>
               <Link to="/NasaPrica" className="btn order_now btn_red">
                 Naša priča

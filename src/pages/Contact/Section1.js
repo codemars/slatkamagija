@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import '../../styles/ContactStyle.css';
@@ -8,59 +7,63 @@ import '../../styles/util.css';
 import contact from '../../assets/logo/logo_jabuka.webp';
 
 const Section1 = () => {
-  const form = useRef();
   const [formData, setFormData] = useState({
     user_name: "",
     user_last: "",
     user_email: "",
-    message: ""
+    message: "",
   });
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_EMAILJS_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-          // Clear form data after successful submission
-          setFormData({
-            user_name: "",
-            user_last: "",
-            user_email: "",
-            message: ""
-          });
-          // Show success toast
-          toast.success("Poruka uspešno poslata!");
-        },
-        (error) => {
-          console.log(error.text);
-          // Show error toast
-          toast.error("Došlo je do greške prilikom slanja poruke.");
-        }
-      );
-  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Formspree URL sa tvojim FORM_ID
+    const formspreeUrl = "https://formspree.io/f/xvggypzw";
+
+    try {
+      const response = await fetch(formspreeUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: `${formData.user_name} ${formData.user_last}`,
+          email: formData.user_email,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        // Uspešno poslata poruka
+        setFormData({
+          user_name: "",
+          user_last: "",
+          user_email: "",
+          message: "",
+        });
+        toast.success("Poruka uspešno poslata!");
+      } else {
+        // Greška tokom slanja
+        toast.error("Došlo je do greške prilikom slanja poruke.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error("Došlo je do greške. Pokušajte ponovo.");
+    }
   };
 
   return (
     <div className="contact1">
       <div className="background-image"></div>
       <div className="container-contact1">
-       
         <div className="contact-info">
           <div className="icon-container">
             <span>
@@ -69,9 +72,7 @@ const Section1 = () => {
           </div>
           <div className="additional-text">
             <h4>Kontakt</h4>
-            <div>
-              <p>+381 (0)693656387</p>
-            </div>
+            <p>+381 (0)693656387</p>
           </div>
         </div>
         <div className="contact-email">
@@ -82,19 +83,17 @@ const Section1 = () => {
           </div>
           <div className="additional-text-email">
             <h4>Email</h4>
-            <div>
-              <p>slatkiproizvod@gmail.com</p>
-            </div>
+            <p>slatkiproizvod@gmail.com</p>
           </div>
         </div>
         <div className="contact1-pic js-tilt" data-tilt>
           <img src={contact} alt="IMG" />
         </div>
 
-        <form className="contact1-form validate-form" ref={form} onSubmit={sendEmail}>
+        <form className="contact1-form validate-form" onSubmit={handleSubmit}>
           <span className="contact1-form-title">KONTAKTIRAJTE NAS</span>
 
-          <div className="wrap-input1 validate-input" data-validate="Name is required">
+          <div className="wrap-input1 validate-input">
             <input
               className="input1"
               type="text"
@@ -102,11 +101,12 @@ const Section1 = () => {
               placeholder="Ime"
               value={formData.user_name}
               onChange={handleChange}
+              required
             />
             <span className="shadow-input1"></span>
           </div>
 
-          <div className="wrap-input1 validate-input" data-validate="Name is required">
+          <div className="wrap-input1 validate-input">
             <input
               className="input1"
               type="text"
@@ -114,29 +114,32 @@ const Section1 = () => {
               placeholder="Prezime"
               value={formData.user_last}
               onChange={handleChange}
+              required
             />
             <span className="shadow-input1"></span>
           </div>
 
-          <div className="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+          <div className="wrap-input1 validate-input">
             <input
               className="input1"
-              type="text"
+              type="email"
               name="user_email"
               placeholder="Email"
               value={formData.user_email}
               onChange={handleChange}
+              required
             />
             <span className="shadow-input1"></span>
           </div>
 
-          <div className="wrap-input1 validate-input" data-validate="Message is required">
+          <div className="wrap-input1 validate-input">
             <textarea
               className="input1"
               name="message"
               placeholder="Unesite vašu poruku"
               value={formData.message}
               onChange={handleChange}
+              required
             ></textarea>
             <span className="shadow-input1"></span>
           </div>
@@ -150,7 +153,6 @@ const Section1 = () => {
             </button>
           </div>
         </form>
-        {/* Toastify container for notifications */}
         <ToastContainer />
       </div>
     </div>
