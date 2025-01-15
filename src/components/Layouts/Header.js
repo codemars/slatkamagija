@@ -19,14 +19,14 @@ const Header = () => {
     }
 
     if (prevScrollPos > currentScrollPos) {
-      // Ako skroluješ nadole, prikaži navbar
+      
       setNavVisible(true);
     } else {
-      // Ako skroluješ nadole, sakrij navbar
+      
       setNavVisible(false);
     }
 
-    setPrevScrollPos(currentScrollPos); // Ažuriraj prethodnu poziciju skrolovanja
+    setPrevScrollPos(currentScrollPos); 
   };
 
   useEffect(() => {
@@ -42,7 +42,7 @@ const Header = () => {
         collapseOnSelect
         expand="lg"
         className={`sticky ${navVisible ? "visible" : "hidden"}`}
-        style={{ backgroundColor: isAtTop ? "#fff3d9" : "#fff3d9" }} // Ukloni pozadinu kada je na vrhu
+        style={{ backgroundColor: isAtTop ? "#F4E3C1" : "#fff3d9" }} 
       >
         <Container>
           <Navbar.Brand href="#home">
@@ -59,9 +59,7 @@ const Header = () => {
               <Nav.Link className="animated-link" as={Link} to="/Recepti">
                 Recepti
               </Nav.Link>
-             {/*  <Nav.Link className="animated-link" as={Link} to="/NasaPrica">
-                Naša priča
-              </Nav.Link> */}
+             
               <Nav.Link className="animated-link" as={Link} to="/Kontakt">
                 Kontakt
               </Nav.Link>

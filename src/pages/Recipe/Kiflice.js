@@ -1,10 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Layout from "../../components/Layouts/Layout";
 import kiflice from "../../assets/recipe/kiflice.webp";
 import { useNavigate } from "react-router-dom"; 
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
 const Recipe1 = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1500,
+          once: true, 
+          mirror: true,
+          once: false,
+        });
+      }, []);
   const navigate = useNavigate();
   return (
     <>
@@ -14,8 +24,9 @@ const Recipe1 = () => {
             <div className="row gutters-60">
               <div className="col-lg-12">
                 <div className="single-recipe-layout1">
-                <h1 className="item-title left">
+                <h1 className="item-title left"   data-aos="fade-right">
                     <i
+                    data-aos="fade-right"
                       className="fas fa-arrow-left arrow-icon"
                       onClick={() => navigate(-1)}
                       style={{ cursor: "pointer", marginRight: "10px", color: "black", fontSize: "27px" }}
@@ -36,12 +47,12 @@ const Recipe1 = () => {
                     </div>
                   </div>
                   <div className="item-figure1">
-                    <img src={kiflice} alt="Product" />
+                    <img src={kiflice} alt="Product"   data-aos="fade-fadde" />
                   </div>
                   <div className="item-feature">
                     <ul>
                       <li>
-                        <div className="feature-wrap">
+                        <div className="feature-wrap"   data-aos="fade-left">
                           <div className="media">
                             <div className="feature-icon">
                               <i className="far fa-clock"></i>
@@ -57,7 +68,7 @@ const Recipe1 = () => {
                       </li>
                    
                       <li>
-                        <div className="feature-wrap">
+                        <div className="feature-wrap" data-aos="fade-right">
                           <div className="media">
                             <div className="feature-icon">
                               <i className="fas fa-users"></i>
@@ -72,7 +83,7 @@ const Recipe1 = () => {
                     
                     </ul>
                   </div>
-                  <p className="item-description">
+                  <p className="item-description"   data-aos="fade-fade">
                     Zasladite svoje nepce ovim neodoljivim kiflicama, punjenim
                     sočnim džemom. Mekane, mirisne i prepune ukusa, ove kiflice
                     su savršen desert koji će očarati sve ukućane. Uživajte u
@@ -82,7 +93,7 @@ const Recipe1 = () => {
                     vašem domu!
                   </p>
 
-                  <div className="making-elements-wrap">
+                  <div className="making-elements-wrap"   data-aos="fade-up">
                     <div className="row">
                       <div className="col-xl-6 col-12">
                         <div class="ingredients-wrap">
@@ -106,10 +117,10 @@ const Recipe1 = () => {
 
                   <div className="direction-wrap-layout1">
                     <div className="section-heading heading-dark">
-                      <h2 className="item-heading">Upustvo za pripremu</h2>
+                      <h2 className="item-heading"   data-aos="fade-right">Upustvo za pripremu</h2>
                     </div>
                    
-                    <div className="direction-box-layout1">
+                    <div className="direction-box-layout1"   data-aos="fade-right">
                       <div className="item-content">
                         <div className="serial-number">Korak 1</div>
                         <p>
@@ -118,7 +129,7 @@ const Recipe1 = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="direction-box-layout1">
+                    <div className="direction-box-layout1"   data-aos="fade-right">
                       <div className="item-content">
                         <div className="serial-number">Korak 2</div>
                         <p>
@@ -127,7 +138,7 @@ const Recipe1 = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="direction-box-layout1">
+                    <div className="direction-box-layout1"   data-aos="fade-right">
                       <div className="item-content">
                         <div className="serial-number">Korak 3</div>
                         <p>
@@ -136,7 +147,7 @@ const Recipe1 = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="direction-box-layout1">
+                    <div className="direction-box-layout1"   data-aos="fade-right">
                       <div className="item-content">
                         <div className="serial-number">Korak 4</div>
                         <p>

@@ -17,7 +17,7 @@ html {
 
 /* Root Variables */
 :root {
-  /* Fonts Family */
+
   --roboto-font: "Roboto", sans-serif;
   --lilita-font: "Lilita One", cursive;
   --oswald-font: "Oswald", sans-serif;
@@ -122,4 +122,57 @@ a:hover {
   color: var(--light-red);
   background: transparent;
   border-color: var(--light-red);
+}
+
+
+
+
+
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+  backdrop-filter: blur(8px); 
+  transition: background-color 0.3s ease; 
+}
+
+.spinner-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-image {
+  width: 100px;  
+  height: 100px;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3; 
+  border-top: 3px solid red; 
+  border-radius: 50%;
+  width: 120px; 
+  height: 120px; 
+  animation: spin 1.2s linear infinite; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: -1;  /* Ovaj red pravi da spinner bude ispod slike */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

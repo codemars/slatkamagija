@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Sentinel'; /* Naziv fonta */
+  font-family: 'Sentinel'; 
   src: url('../assets/fonts/FontsFree-Net-Sentinel-Medium.ttf'); 
 }
 
@@ -103,7 +103,7 @@
   display: block;
   width: 150px;
   height: 3px;
-  background: #ff6f61; /* Naglašena linija */
+  background: #ff6f61;
   margin: 0.5rem auto;
 }
 

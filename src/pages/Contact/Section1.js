@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import '../../styles/ContactStyle.css';
 import '../../styles/main.css';
 import '../../styles/util.css';
 import contact from '../../assets/logo/logo_jabuka.webp';
-
+import "aos/dist/aos.css";
+import AOS from "aos"; 
 const Section1 = () => {
+
+ useEffect(() => {
+    AOS.init({
+      duration: 1500, // Trajanje animacije u milisekundama
+      once: true, // Animacija se dešava samo jednom (ne ponavlja pri ponovnom skrolovanju)
+      mirror: true,
+      once: false,
+    });
+  }, []);
+
   const [formData, setFormData] = useState({
     user_name: "",
     user_last: "",
@@ -61,10 +72,10 @@ const Section1 = () => {
   };
 
   return (
-    <div className="contact1">
+    <div className="contact1"  data-aos="fade-up">
       <div className="background-image"></div>
       <div className="container-contact1">
-        <div className="contact-info">
+        <div className="contact-info"  data-aos="fade-right">
           <div className="icon-container">
             <span>
               <i className="bi bi-telephone"></i>
@@ -75,7 +86,7 @@ const Section1 = () => {
             <p>+381 (0)693656387</p>
           </div>
         </div>
-        <div className="contact-email">
+        <div className="contact-email"  data-aos="fade-left">
           <div className="icon-container-email">
             <span>
               <i className="bi bi-envelope"></i>
@@ -90,7 +101,7 @@ const Section1 = () => {
           <img src={contact} alt="IMG" />
         </div>
 
-        <form className="contact1-form validate-form" onSubmit={handleSubmit}>
+        <form className="contact1-form validate-form" onSubmit={handleSubmit}  data-aos="fade-left">
           <span className="contact1-form-title">KONTAKTIRAJTE NAS</span>
 
           <div className="wrap-input1 validate-input">

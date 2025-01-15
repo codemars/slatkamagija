@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Sentinel'; /* Naziv fonta */
+  font-family: 'Sentinel'; 
   src: url('../assets/fonts/FontsFree-Net-Sentinel-Medium.ttf'); 
 }
 
@@ -9,7 +9,7 @@ header .navbar {
   width: 100%;
   background-color: transparent; 
   z-index: 1000;
-  transition: top 0.3s; /* Animacija za sakrivanje */
+  transition: top 0.3s; 
 }
 
 header .navbar.sticky {
@@ -28,6 +28,8 @@ header .navbar.hidden {
 header .navbar.visible {
   top: 0; 
   transition: 0.5s;
+  
+  
 }
 
 header .logo img {
