@@ -1,120 +1,295 @@
-@font-face {
-  font-family: 'Sentinel'; 
-  src: url('../assets/fonts/FontsFree-Net-Sentinel-Medium.ttf'); 
+:root {
+  --primary-color: #ff6f61;
+  --primary-hover: #e65b4f;
+  --bg-color: #f3f4f6;
+  --text-color: #222;
+  --secondary-text-color: #555;
+  --card-shadow: rgba(0, 0, 0, 0.15);
+  --highlight-color: #ffe5d9;
+  --border-gradient: linear-gradient(135deg, #fcc1bb, #abff67);
+  --font-family: 'Poppins', sans-serif;
 }
 
-/* Globalne stilove za sekcije */
-.product_section {
-  padding: 3rem 2rem;
-  margin: 2rem 0;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product_section:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-
-/* Sekcija za čokoladu */
-.chocolate_section {
-  background: linear-gradient(135deg, #fdf2e9, #f8e1d2);
-  color: #6d4c41;
-}
-
-.chocolate_section h4 {
-  font-size: 2.2rem;
-  color: #5a3e2b;
-}
-
-.chocolate_section h2 {
-  font-size: 2.8rem;
-  color: #8d6e63;
-  margin-bottom: 1.2rem;
-}
-
-.chocolate_section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #4e342e;
-}
-
-/* Sekcija za sokove */
-
-
-.juice_section h4 {
-  font-size: 1.7rem;
+body {
   
-}
-
-.juice_section h2 {
-  font-size: 3rem;
- 
-  margin-bottom: 1.2rem;
-}
-
-.juice_section p {
-  font-size: 1.4rem;
-  line-height: 1.8;
   
+  background-color: #EDE7D5;
+  margin: 0;
+  padding: 0;
 }
 
-/* Stilovi za slike */
-.product_section img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.product-carousel-container {
+  background-image: url('../assets/background/background1-min.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3rem 1rem;
+ /*  background: radial-gradient(circle at top, var(--bg-color) 0%, #e6e8eb 100%); */
+  border-radius: 20px;
+  margin-top: 5rem;
+  
+ /*  box-shadow: 0 10px 30px var(--card-shadow); */
+  position: relative;
+  overflow: hidden;
 }
 
-.product_section img:hover {
-  transform: scale(1.05);
+
+
+.product-carousel-container::before {
+  content: '';
+  position: absolute;
+  top: -50%; 
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  /* background: radial-gradient(circle, #ffffff10, transparent 70%); */
+  z-index: 0;
+  animation: floatingGlow 6s ease-in-out infinite alternate;
 }
 
-/* Glavni naslov */
-.title {
+@keyframes floatingGlow {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-5%, -5%);
+  }
+}
+
+.carousel-title {
   text-align: center;
-  margin-bottom: 3rem;
-  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  font-family: 'Sentinel', sans-serif;
+ 
 }
 
-.title h4 {
-  font-size: 2.5rem;
-  color: #333;
+
+
+.swiper {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.swiper-button-next {
+  background-image: url(./../assets/next.png);
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-position: center;
+  transform: scale(3.5);
+  transition: 0.5s;
+  opacity: 0.7;
+  
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url(./../assets/back.png);
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-position: center;
+  transform: scale(3.5);
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+
+.swiper-button-next:hover {
+  transition: 0.5s;
+  transform:  scale(4.5); 
+  opacity: 0.9; 
+}
+
+
+.swiper-button-prev:hover {
+  transition: 0.5s;
+  transform:  scale(4.5); 
+  opacity: 0.9; 
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  animation: slideIn 0.5s ease-out; /* Dodavanje animacije */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50%) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+
+.product-item {
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 1rem;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 340px;
+  margin-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+ 
+  z-index: -1;
+  filter: blur(150px);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.product-item:hover::before {
+  opacity: 1;
+}
+
+.product-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.product-item:hover img {
+  transform: scale(1.4);
+}
+
+.product-item h5 {
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 1px;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  font-family: 'Sentinel', sans-serif;
+}
+
+.product-item p {
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin-top: 6.5rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+ 
+}
+
+.details {
+  background-color: #EDE7D5;
 }
 
 .dos1 {
   text-align: center;
-  padding-top: 10rem;
+  font-size: 3.5rem;
+  font-family: 'Sentinel', sans-serif;
 }
 
-.dos {
-  text-align: center;
+.image-details {
+  object-fit: cover;
+  height: 500px;
+  margin-top: -9.5rem;
 }
 
 
 
-.title h4::after {
-  content: "";
-  display: block;
-  width: 150px;
-  height: 3px;
-  background: #ff6f61;
-  margin: 0.5rem auto;
+
+
+
+/* Animacija pojavljivanja elemenata */
+.product-item {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 0.8s ease-in-out forwards;
 }
 
-/* Responsivnost */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responzivnost */
 @media (max-width: 768px) {
-  .product_section {
-    text-align: center;
+  .product-carousel-container {
+    margin-top: 6.5rem;
+  }
+  .product-item {
+    width: 280px;
   }
 
-  .product_section img {
-    margin-bottom: 1.5rem;
+  .carousel-title {
+    font-size: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .product-item {
+    width: 240px;
+  }
+
+  .image-details {
+    height: 450px;
+    margin-top: 0rem;
+    margin-left: 0.5rem;
+  }
+
+  .product-item h5 {
+    font-size: 1.2rem;
+  }
+
+  .product-item p {
+    font-size: 1rem;
+  }
+
+  .product-item img {
+    max-height: 350px;
+  }
+  
+
+}
+
+
 

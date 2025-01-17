@@ -47,7 +47,7 @@ function Footer() {
                 <h5>Poručite odmah</h5>
                 <p>Putem instagram stranice ili na broj</p>
                 <p>
-                  <Link to="tel:9998887777" className="calling">
+                  <Link to="tel:0693656387" className="calling">
                    034-365-6387
                   </Link>
                 </p>

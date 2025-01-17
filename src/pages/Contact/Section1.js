@@ -13,8 +13,8 @@ const Section1 = () => {
     AOS.init({
       duration: 1500, // Trajanje animacije u milisekundama
       once: true, // Animacija se dešava samo jednom (ne ponavlja pri ponovnom skrolovanju)
-      mirror: true,
-      once: false,
+      mirror: false,
+      once: true,
     });
   }, []);
 

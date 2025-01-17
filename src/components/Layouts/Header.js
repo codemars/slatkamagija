@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";  // Importuj ikonu korpe
 import Logo from "../../assets/logo.png";
 import "../../styles/HeaderStyle.css";
 
@@ -8,6 +9,7 @@ const Header = () => {
   const [navVisible, setNavVisible] = useState(true);
   const [isAtTop, setIsAtTop] = useState(true); 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset; 
@@ -19,10 +21,8 @@ const Header = () => {
     }
 
     if (prevScrollPos > currentScrollPos) {
-      
       setNavVisible(true);
     } else {
-      
       setNavVisible(false);
     }
 
@@ -35,6 +35,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
+
 
   return (
     <header>
@@ -59,10 +60,10 @@ const Header = () => {
               <Nav.Link className="animated-link" as={Link} to="/Recepti">
                 Recepti
               </Nav.Link>
-             
               <Nav.Link className="animated-link" as={Link} to="/Kontakt">
                 Kontakt
               </Nav.Link>
+             
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -20,7 +20,7 @@ const Section1 = () => {
         <Container>
           <Row className="align-items-center py-5">
             <Col lg={12} className="text-center text-lg-start mb-5 mb-lg-0">
-              <h4 data-aos="fade-down">Recepti koji bogatstvo ukusa podižu na sledeći nivo</h4>
+              <h4 data-aos="fade-down" >Recepti koji donose pravu slatku magiju u svakom zalogaju</h4>
             </Col>
           </Row>
         </Container>
@@ -49,7 +49,7 @@ const Section1 = () => {
                   <ul className="entry-meta">
                     <li>
                       <a href="#">
-                        <i className="fas fa-clock"></i>15 Mins
+                        <i className="fas fa-clock"></i> Vreme pripreme: 40 Mins
                       </a>
                     </li>
                   </ul>
