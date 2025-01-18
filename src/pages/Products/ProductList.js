@@ -70,6 +70,8 @@ const ProductList = () => {
                 <h5 className="product-name">{product.name}</h5>
                
               </div>
+
+              
             </div>
           </SwiperSlide>
         ))}

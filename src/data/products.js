@@ -1,32 +1,34 @@
-import jam from '../assets/products/jam.webp';
-import cocoa_cream from '../assets/products/cocoa_cream.webp';
-import cocoa_milk from '../assets/products/cocoa_cream_milk.webp';
+import mesano from '../assets/products/mesano-min.png';
+import sipurak from '../assets/products/sipurak-min.png';
+import crni from '../assets/products/crni-min.png';
+import beli from '../assets/products/beli-min.png';
 
-import chocholate from '../assets/products/chocholate.png';
-import juice_mix from '../assets/products/juice_mix.png';
+/* import chocholate from '../assets/products/chocholate.png';
+import juice_mix from '../assets/products/juice_mix.png'; */
 
 
 const products = [
-    /* {
+    {
       id: 1,
       name: 'Marmelada od Šipurka',
       price: 500,
-      image: jam,
-      description: `Otvorite vrata nezaboravnog ukusa sa našom marmeladom od divljeg šipurka. Spoj autentičnih sastojaka, ljubavi prema tradiciji i savremenih tehnika donosi vam deliciju koja budi sećanja na detinjstvo i domaće slatke trenutke.`
+      image: sipurak,
+      description: `Otvorite vrata nezaboravnog ukusa sa našom marmeladom od divljeg šipurka. Spoj autentičnih sastojaka, ljubavi prema tradiciji i savremenih tehnika donosi vam deliciju koja budi sećanja na detinjstvo i domaće slatke trenutke.`,
+      hoverImage: sipurak,
     },
     {
       id: 2,
       name: 'Mešana marmelada',
       price: 300,
-      image: jam,
+      image: mesano,
       description: `Otvorite teglicu punu raznovrsnog voćnog ukusa! Naša mešana marmelada donosi savršen balans prirodne slatkoće i arome, 
       idealna za sve prilike – od doručka do deserta.`
-    }, */
+    },
     {
       id: 3,
       name: 'Kakao krem',
       price: 450,
-      image: cocoa_cream,
+      image: crni,
       description: `Zaronite u poseban svet slatkog užitka s našim kakaom kremom. 
       Ovaj jedinstveni spoj intenzivnog kakaa i sočnog lešnika čini ovu kremu neodoljivom poslasticom. 
       Svaki zalogaj je čaroban, pružajući vam izuzetno iskustvo koje se pamti.`
@@ -35,7 +37,7 @@ const products = [
       id: 4,
       name: 'Mlečni kakao krem',
       price: 450,
-      image: cocoa_milk,
+      image: beli,
       description: `Nežna kombinacija mleka i kakaoa donosi savršeno kremast užitak. 
       Naš mlečni kakao krem je prava uteha za vaša čula – idealan za jutarnje palačinke ili večernje uživanje.`
     },
