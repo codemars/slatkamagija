@@ -1,7 +1,7 @@
-import mesano from '../assets/products/mesano-min.png';
-import sipurak from '../assets/products/sipurak-min.png';
-import crni from '../assets/products/crni-min.png';
-import beli from '../assets/products/beli-min.png';
+import mesano from '../assets/products/mesano-min.webp';
+import sipurak from '../assets/products/sipurak-min.webp';
+import crni from '../assets/products/crni-min.webp';
+import beli from '../assets/products/beli-min.webp';
 
 /* import chocholate from '../assets/products/chocholate.png';
 import juice_mix from '../assets/products/juice_mix.png'; */
