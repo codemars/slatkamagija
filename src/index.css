@@ -14,10 +14,8 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* Root Variables */
 :root {
-
   --roboto-font: "Roboto", sans-serif;
   --lilita-font: "Lilita One", cursive;
   --oswald-font: "Oswald", sans-serif;
@@ -94,8 +92,8 @@ a:hover {
 /* Common Button */
 .order_now {
   color: var(--light-black);
-  background:  #EDEDED;
-  border-color:  #EDEDED;
+  background: #ededed;
+  border-color: #ededed;
   padding: 15px 38px;
   font-size: 16px;
   font-weight: 500;
@@ -124,24 +122,19 @@ a:hover {
   border-color: var(--light-red);
 }
 
-
-
-
-
-
 .loading-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8); 
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; 
-  backdrop-filter: blur(8px); 
-  transition: background-color 0.3s ease; 
+  z-index: 9999;
+  backdrop-filter: blur(8px);
+  transition: background-color 0.3s ease;
 }
 
 .spinner-wrapper {
@@ -152,20 +145,20 @@ a:hover {
 }
 
 .loading-image {
-  width: 100px;  
+  width: 100px;
   height: 100px;
 }
 
 .spinner {
-  border: 6px solid #f3f3f3; 
-  border-top: 3px solid red; 
+  border: 6px solid #f3f3f3;
+  border-top: 3px solid red;
   border-radius: 50%;
-  width: 120px; 
-  height: 120px; 
-  animation: spin 1.2s linear infinite; 
+  width: 120px;
+  height: 120px;
+  animation: spin 1.2s linear infinite;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: absolute;
-  z-index: -1;  /* Ovaj red pravi da spinner bude ispod slike */
+  z-index: -1; /* Ovaj red pravi da spinner bude ispod slike */
 }
 
 @keyframes spin {

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -64,7 +64,7 @@ const ProductList = () => {
           <SwiperSlide key={product.id} className="product-slide">
             <div className="product-item">
               <Link to={`/proizvod/${product.id}`}>
-                <img src={product.image} alt={product.name} className="product-image" />
+                <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
               </Link>
               <div className="product-details">
                 <h5 className="product-name">{product.name}</h5>

@@ -20,7 +20,7 @@ const Home = () => {
      
         <Section5 />
 
-        <Section7 />
+       {/*  <Section7 /> */}
       </Layout>
     </>
   );

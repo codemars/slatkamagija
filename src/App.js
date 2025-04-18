@@ -7,19 +7,20 @@ import Recipe from "./pages/Recipe/Recipe";
 import Kiflice from "./pages/Recipe/Kiflice";
 import LoadingAnimation from './components/Layouts/LoadingAnimation';
 import ProductDetails from "./pages/Products/ProductDetails";
+import Palacinke from "./pages/Recipe/Palacinke";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true); 
+  const [isLoading, setIsLoading] = useState(true);
 
-  
+
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false); 
+      setIsLoading(false);
     }, 2000);
   }, []);
 
   return (
-  
+
     <Router>
 
       {isLoading ? (
@@ -31,12 +32,14 @@ function App() {
           <Route path="/Kontakt" element={<Contact />} />
           <Route path="/Recepti" element={<Recipe />} />
           <Route path="/Recepti/Kiflice" element={<Kiflice />} />
+          <Route path="/Recepti/Palacinke" element={<Palacinke />} />
+
           <Route path="/proizvod/:id" element={<ProductDetails />} />
-          
+
         </Routes>
       )}
     </Router>
-   
+
   );
 }
 

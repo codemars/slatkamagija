@@ -11,8 +11,7 @@ const Recipe1 = () => {
         AOS.init({
           duration: 1500,
           once: true, 
-          mirror: true,
-          once: false,
+          
         });
       }, []);
   const navigate = useNavigate();
@@ -31,7 +30,7 @@ const Recipe1 = () => {
                       onClick={() => navigate(-1)}
                       style={{ cursor: "pointer", marginRight: "10px", color: "black", fontSize: "27px" }}
                     ></i>
-                    Magicne kiflice sa dzemom od sipurka
+                    Magične kiflice sa džemom od šipurka
                   </h1>
                   <div className="row mb-4 left">
                     <div className="col-xl-9 col-12">
@@ -96,12 +95,12 @@ const Recipe1 = () => {
                   <div className="making-elements-wrap"   data-aos="fade-up">
                     <div className="row">
                       <div className="col-xl-6 col-12">
-                        <div class="ingredients-wrap">
-                          <h3 class="item-title">
-                            <i class="fas fa-list-ul"></i> Sastojci
+                        <div className="ingredients-wrap">
+                          <h3 className="item-title">
+                            <i className="fas fa-list-ul"></i> Sastojci
                           </h3>
 
-                          <ul class="ingredient-list">
+                          <ul className="ingredient-list">
                             <li>300ml ulja</li>
                             <li>150ml vruce vode</li>
                             <li>1 prasak za pecivo</li>

@@ -60,13 +60,13 @@ function Footer() {
                 <ul className="list-unstyled text-center mt-2">
                   <li>
                     <Link to="https://www.facebook.com/profile.php?id=61554537968449" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-facebook"></i>
+                      <i className="bi bi-facebook"></i>
                     </Link>
                   </li>
                  
                   <li>
                     <Link to="https://www.instagram.com/slatkamagijaa/" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-instagram"></i>
+                      <i className="bi bi-instagram"></i>
                     </Link>
                   </li>
                  
@@ -94,7 +94,7 @@ function Footer() {
       {/* Sroll To Top */}
       {isVisible && (
         <div className="scroll_top" onClick={scrollTop}>
-          <i class="bi bi-arrow-up"></i>
+          <i className="bi bi-arrow-up"></i>
         </div>
       )}
     </>

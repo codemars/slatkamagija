@@ -11,10 +11,9 @@ const Section1 = () => {
 
  useEffect(() => {
     AOS.init({
-      duration: 1500, // Trajanje animacije u milisekundama
-      once: true, // Animacija se dešava samo jednom (ne ponavlja pri ponovnom skrolovanju)
-      mirror: false,
-      once: true,
+      duration: 1500, 
+      once: true, 
+    
     });
   }, []);
 

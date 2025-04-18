@@ -2,7 +2,7 @@ import mesano from '../assets/products/mesano-min.webp';
 import sipurak from '../assets/products/sipurak-min.webp';
 import crni from '../assets/products/crni-min.webp';
 import beli from '../assets/products/beli-min.webp';
-
+/* import mix from '../assets/products/mix.jpeg'; */
 /* import chocholate from '../assets/products/chocholate.png';
 import juice_mix from '../assets/products/juice_mix.png'; */
 
@@ -24,8 +24,17 @@ const products = [
       description: `Otvorite teglicu punu raznovrsnog voćnog ukusa! Naša mešana marmelada donosi savršen balans prirodne slatkoće i arome, 
       idealna za sve prilike – od doručka do deserta.`
     },
-    {
+  /*   {
       id: 3,
+      name: 'Mlečni kakao krem',
+      price: 450,
+      image: mix,
+      description: `Zaronite u poseban svet slatkog užitka s našim kakaom kremom. 
+      Ovaj jedinstveni spoj intenzivnog kakaa i sočnog lešnika čini ovu kremu neodoljivom poslasticom. 
+      Svaki zalogaj je čaroban, pružajući vam izuzetno iskustvo koje se pamti.`
+    }, */
+    {
+      id: 4,
       name: 'Kakao krem',
       price: 450,
       image: crni,
@@ -34,7 +43,7 @@ const products = [
       Svaki zalogaj je čaroban, pružajući vam izuzetno iskustvo koje se pamti.`
     },
     {
-      id: 4,
+      id: 5,
       name: 'Mlečni kakao krem',
       price: 450,
       image: beli,

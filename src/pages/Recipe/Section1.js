@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import palacinke from "../../assets/recipe/americke.webp";
 import kiflice from "../../assets/recipe/kiflice.webp";
+
 import "aos/dist/aos.css";
 import AOS from "aos";
 const Section1 = () => {
@@ -10,8 +12,7 @@ const Section1 = () => {
     AOS.init({
       duration: 1500,
       once: true,
-      mirror: true,
-      once: false,
+      
     });
   }, []);
   return (
@@ -41,7 +42,7 @@ const Section1 = () => {
 
                   <h3 className="item-title" data-aos="fade-right">
                     <Link to="/Recepti/Kiflice">
-                      Magicne kiflice sa dzemom od sipurka
+                      Magične kiflice sa džemom od šipurka
                     </Link>
                   </h3>
 
@@ -49,7 +50,38 @@ const Section1 = () => {
                   <ul className="entry-meta">
                     <li>
                       <a href="#">
-                        <i className="fas fa-clock"></i> Vreme pripreme: 40 Mins
+                        <i className="fas fa-clock"></i> Vreme pripreme: 40 Min
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+       
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12 mb-5" >
+              <div className="product-box-layout1">
+                <figure className="item-figure">
+                  <a href="#">
+                    <Link to="/Recepti/Palacinke">
+                      <img src={palacinke} alt="Product" />
+                    </Link>
+                  </a>
+                </figure>
+                <div className="item-content">
+
+                  <h3 className="item-title" data-aos="fade-right">
+                    <Link to="/Recepti/Palacinke">
+                       Američke palačinke za domaćim kakao kremom
+                    </Link>
+                  </h3>
+
+
+                  <ul className="entry-meta">
+                    <li>
+                      <a href="#">
+                        <i className="fas fa-clock"></i> Vreme pripreme: 50 Min
                       </a>
                     </li>
                   </ul>

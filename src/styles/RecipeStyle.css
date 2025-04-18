@@ -29,7 +29,7 @@
     background-color: #fff;
     border: 1px solid #e5e5e5;
 	border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
 	transition: 0.3s;
 	
 }
@@ -41,23 +41,23 @@
 .item-figure {
     margin-bottom: 15px;
     border-radius: 15px;
-    overflow: hidden; /* Sprečava sliku da prelazi van okvira */
-    display: inline-block; /* Da okvir obuhvati sadržaj slike */
+    overflow: hidden; 
+    display: inline-block; 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .item-figure img {
     max-width: 100%;
     height: auto;
-    transition: transform 0.4s ease-in-out; /* Efekat tranzicije */
+    transition: transform 0.4s ease-in-out; 
 }
 
 .item-figure img:hover {
-    transform: scale(1.35); /* Zumiranje slike */
+    transform: scale(1.35);
 }
 
 .item-figure1 img {
-    width: 300px;
+    width: 480px;
 	height: 350px;
 	display: block;
 	margin: 1rem auto;
