@@ -2,7 +2,7 @@ import mesano from '../assets/products/mesano-min.webp';
 import sipurak from '../assets/products/sipurak-min.webp';
 import crni from '../assets/products/crni-min.webp';
 import beli from '../assets/products/beli-min.webp';
-/* import mix from '../assets/products/mix.jpeg'; */
+import mix from '../assets/products/mesano.png';
 /* import chocholate from '../assets/products/chocholate.png';
 import juice_mix from '../assets/products/juice_mix.png'; */
 
@@ -24,32 +24,31 @@ const products = [
       description: `Otvorite teglicu punu raznovrsnog voćnog ukusa! Naša mešana marmelada donosi savršen balans prirodne slatkoće i arome, 
       idealna za sve prilike – od doručka do deserta.`
     },
-  /*   {
+    {
       id: 3,
       name: 'Mlečni kakao krem',
       price: 450,
       image: mix,
-      description: `Zaronite u poseban svet slatkog užitka s našim kakaom kremom. 
-      Ovaj jedinstveni spoj intenzivnog kakaa i sočnog lešnika čini ovu kremu neodoljivom poslasticom. 
-      Svaki zalogaj je čaroban, pružajući vam izuzetno iskustvo koje se pamti.`
-    }, */
+      description: `Savršen balans mlečne nežnosti i bogatog kakao ukusa. 
+      Mlečni kakao krem oduševljava svakim namazom – idealan za one koji vole slatki spoj topline mleka i karaktera kakaa.`
+    },
     {
       id: 4,
       name: 'Kakao krem',
       price: 450,
       image: crni,
-      description: `Zaronite u poseban svet slatkog užitka s našim kakaom kremom. 
-      Ovaj jedinstveni spoj intenzivnog kakaa i sočnog lešnika čini ovu kremu neodoljivom poslasticom. 
-      Svaki zalogaj je čaroban, pružajući vam izuzetno iskustvo koje se pamti.`
+      description: `Intenzivan, pun ukus tamnog kakaa stvoren za prave ljubitelje čokolade. 
+      Naš kakao krem pruža bogato iskustvo koje se savršeno slaže s tostom, kroasanima ili direktno kašikom.`
     },
     {
       id: 5,
-      name: 'Mlečni kakao krem',
+      name: 'Mlečni krem',
       price: 450,
       image: beli,
-      description: `Nežna kombinacija mleka i kakaoa donosi savršeno kremast užitak. 
-      Naš mlečni kakao krem je prava uteha za vaša čula – idealan za jutarnje palačinke ili večernje uživanje.`
-    },
+      description: `Lagani, svileni mlečni krem koji se topi u ustima. 
+      Bez kakaa, ali pun mlečne slasti – savršen za decu i sve koji vole čist, kremasti ukus mleka.`
+    }
+    
    /*  {
       id: 5,
       name: 'Magična čokolada',
