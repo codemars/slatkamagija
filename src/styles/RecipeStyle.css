@@ -75,13 +75,19 @@
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .arrow-icon {
-    transition: transform 0.3s ease, color 0.3s ease;
+	cursor: pointer;
+	color: black !important;
+	margin-right: 10px;
+	font-size: 25px;
+	transition: transform 0.3s ease, color 0.3s ease !important;
+
+	display: inline-block; 
+}
+.arrow-icon:hover {
+	transform: translateX(-15px) !important; 
+	color: red !important; 
 }
 
-.arrow-icon:hover {
-    transform: translateX(-5px); 
-    color: #007bff; 
-}
 
 
 .section-heading {
@@ -117,6 +123,12 @@
 		width: 300px;
 		height: 320px;
 	}
+	.cream img {
+		display: flex;
+		justify-content: center;
+		width: 350px;
+		height: 290px;
+	}
 }
 @media (max-width: 420px) {
 	.item-figure1 img {
@@ -126,6 +138,12 @@
 
 		width: 210px;
 		height: 250px;
+	}
+	.cream img {
+		display: flex;
+		justify-content: center;
+		width: 280px;
+		height: 200px;
 	}
 
 	.section-heading {

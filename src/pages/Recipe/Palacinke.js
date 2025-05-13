@@ -28,7 +28,7 @@ const Recipe1 = () => {
                       data-aos="fade-right"
                       className="fas fa-arrow-left arrow-icon"
                       onClick={() => navigate(-1)}
-                      style={{ cursor: "pointer", marginRight: "10px", color: "black", fontSize: "27px" }}
+                      
                     ></i>
                     Magične palačinke sa kakao kremom
                   </h1>
@@ -60,7 +60,7 @@ const Recipe1 = () => {
                               <div className="feature-title">
                                 Vreme pripreme
                               </div>
-                              <div className="feature-sub-title">40 Min</div>
+                              <div className="feature-sub-title">45 Min</div>
                             </div>
                           </div>
                         </div>

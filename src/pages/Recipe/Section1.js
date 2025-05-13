@@ -81,7 +81,7 @@ const Section1 = () => {
                   <ul className="entry-meta">
                     <li>
                       <a href="#">
-                        <i className="fas fa-clock"></i> Vreme pripreme: 50 Min
+                        <i className="fas fa-clock"></i> Vreme pripreme: 45 Min
                       </a>
                     </li>
                   </ul>
