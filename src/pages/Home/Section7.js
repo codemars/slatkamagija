@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+/* import React, {useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -34,3 +34,4 @@ function Section7() {
 }
 
 export default Section7;
+ */

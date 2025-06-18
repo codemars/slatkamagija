@@ -1,41 +1,28 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";  // Importuj ikonu korpe
 import Logo from "../../assets/logo.png";
 import "../../styles/HeaderStyle.css";
 
 const Header = () => {
   const [navVisible, setNavVisible] = useState(true);
-  const [isAtTop, setIsAtTop] = useState(true); 
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-
+  const [isAtTop, setIsAtTop] = useState(true);
+  const prevScrollPos = useRef(0);
 
   const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset; 
-  
-    if (currentScrollPos === 0) {
-      setIsAtTop(true);
-    } else {
-      setIsAtTop(false);
-    }
+    const currentScrollPos = window.pageYOffset;
 
-    if (prevScrollPos > currentScrollPos) {
-      setNavVisible(true);
-    } else {
-      setNavVisible(false);
-    }
+    setIsAtTop(currentScrollPos === 0);
 
-    setPrevScrollPos(currentScrollPos); 
+    setNavVisible(prevScrollPos.current > currentScrollPos);
+
+    prevScrollPos.current = currentScrollPos;
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [prevScrollPos]);
-
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []); // prazna zavisnost, handleScroll ne menja referencu
 
   return (
     <header>
@@ -43,13 +30,11 @@ const Header = () => {
         collapseOnSelect
         expand="lg"
         className={`sticky ${navVisible ? "visible" : "hidden"}`}
-        style={{ backgroundColor: isAtTop ? "#F4E3C1" : "#fff3d9" }} 
+        style={{ backgroundColor: isAtTop ? "#F4E3C1" : "#fff3d9" }}
       >
         <Container>
-          <Navbar.Brand href="#home">
-            <Link to="/" className="logo">
-              <img src={Logo} alt="Logo" className="img-fluid" />
-            </Link>
+          <Navbar.Brand as={Link} to="/" className="logo">
+            <img src={Logo} alt="Logo" className="img-fluid" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -63,7 +48,6 @@ const Header = () => {
               <Nav.Link className="animated-link" as={Link} to="/Kontakt">
                 Kontakt
               </Nav.Link>
-             
             </Nav>
           </Navbar.Collapse>
         </Container>

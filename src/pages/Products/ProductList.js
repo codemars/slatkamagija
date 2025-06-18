@@ -9,7 +9,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
-
 import products from '../../data/products';
 import '../../styles/ProductsStyle.css';
 
@@ -63,7 +62,7 @@ const ProductList = () => {
         {products.map((product) => (
           <SwiperSlide key={product.id} className="product-slide">
             <div className="product-item">
-              <Link to={`/proizvod/${product.id}`}>
+              <Link to={`/Proizvodi/${product.slug}`}>
                 <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
               </Link>
               <div className="product-details">

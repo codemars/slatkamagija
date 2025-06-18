@@ -28,7 +28,7 @@ const Recipe1 = () => {
                       data-aos="fade-right"
                       className="fas fa-arrow-left arrow-icon"
                       onClick={() => navigate(-1)}
-                      
+
                     ></i>
                     Magične palačinke sa kakao kremom
                   </h1>
@@ -36,17 +36,16 @@ const Recipe1 = () => {
                     <div className="col-xl-9 col-12">
                       <ul className="entry-meta">
                         <li className="single-meta">
-                          <a href="#">
-                            <i className="far fa-calendar-alt"></i>Januar 14,
-                            2024
-                          </a>
+                          <span>
+                            <i className="far fa-calendar-alt"></i> Januar 14, 2024
+                          </span>
                         </li>
 
                       </ul>
                     </div>
                   </div>
                   <div className="cream">
-                    <img src={palacinke} alt="Product" data-aos="fade-fadde" />
+                    <img src={palacinke} alt="Američke palačinke sa kakao kremom" data-aos="fade-fadde" />
                   </div>
                   <div className="item-feature">
                     <ul>
@@ -83,8 +82,8 @@ const Recipe1 = () => {
                     </ul>
                   </div>
                   <p className="item-description" data-aos="fade-fade">
-                  Zasladite svoje nepce ovim neodoljivim palačinkama, savršeno mekanim i punim ukusa.
-                  Bilo da ih punite kremom, džemom ili poslužite s voćem, ove palačinke su klasik koji osvaja na prvi zalogaj. Idealne za doručak, užinu ili lagani desert – uz šoljicu toplog mleka ili kafu. Jednostavno se prave, a njihov ukus budi najlepše uspomene iz detinjstva!
+                    Zasladite svoje nepce ovim neodoljivim palačinkama, savršeno mekanim i punim ukusa.
+                    Bilo da ih punite kremom, džemom ili poslužite s voćem, ove palačinke su klasik koji osvaja na prvi zalogaj. Idealne za doručak, užinu ili lagani desert – uz šoljicu toplog mleka ili kafu. Jednostavno se prave, a njihov ukus budi najlepše uspomene iz detinjstva!
                   </p>
 
                   <div className="making-elements-wrap" data-aos="fade-up">
@@ -119,7 +118,7 @@ const Recipe1 = () => {
                         <div className="serial-number">Korak 1</div>
                         <p>
 
-                        U velikoj posudi umutite jaja, dodajte mleko, vodu, ulje i prstohvat soli. Dobro promešajte.
+                          U velikoj posudi umutite jaja, dodajte mleko, vodu, ulje i prstohvat soli. Dobro promešajte.
 
 
                         </p>
@@ -130,7 +129,7 @@ const Recipe1 = () => {
                         <div className="serial-number">Korak 2</div>
                         <p>
 
-                        Postepeno dodajte brašno, muteći dok ne dobijete glatku smesu bez grudvica. Ostavite da odstoji 10/15 minuta.
+                          Postepeno dodajte brašno, muteći dok ne dobijete glatku smesu bez grudvica. Ostavite da odstoji 10/15 minuta.
                         </p>
                       </div>
                     </div>
@@ -139,7 +138,7 @@ const Recipe1 = () => {
                         <div className="serial-number">Korak 3</div>
                         <p>
 
-                        Zagrejte tiganj s malo ulja, sipajte kutlaču smese i ravnomerno rasporedite. Pržite palačinku 1/2 minuta sa svake strane, dok ne dobije zlatnu boju.
+                          Zagrejte tiganj s malo ulja, sipajte kutlaču smese i ravnomerno rasporedite. Pržite palačinku 1/2 minuta sa svake strane, dok ne dobije zlatnu boju.
                         </p>
                       </div>
                     </div>
@@ -148,7 +147,7 @@ const Recipe1 = () => {
                         <div className="serial-number">Korak 4</div>
                         <p>
 
-                        Gotove palačinke mažite omiljenim nadevom, čokoladnim kremom, džemom, orasima sa šećerom, i uvijajte po želji. Poslužite tople, posute prah šećerom ili prelivenim sirupom.
+                          Gotove palačinke mažite omiljenim nadevom, čokoladnim kremom, džemom, orasima sa šećerom, i uvijajte po želji. Poslužite tople, posute prah šećerom ili prelivenim sirupom.
 
 
                         </p>
@@ -160,13 +159,13 @@ const Recipe1 = () => {
                       <li>
                         <ul className="inner-share">
                           <li>
-                            <a href="https://www.facebook.com/profile.php?id=61554537968449&locale=sr_RS" target='_blank'>
+                            <a href="https://www.facebook.com/profile.php?id=61554537968449&locale=sr_RS" target='_blank' rel="noreferrer">
                               <i className="fab fa-facebook-f"></i>
                             </a>
                           </li>
 
                           <li>
-                            <a href="https://www.instagram.com/slatkamagijaa/" target='_blank'>
+                            <a href="https://www.instagram.com/slatkamagijaa/" target='_blank' rel="noreferrer">
                               <i className="fab fa-instagram"></i>
                             </a>
                           </li>

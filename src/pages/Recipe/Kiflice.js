@@ -36,17 +36,16 @@ const Recipe1 = () => {
                     <div className="col-xl-9 col-12">
                       <ul className="entry-meta">
                         <li className="single-meta">
-                          <a href="#">
-                            <i className="far fa-calendar-alt"></i>Januar 14,
-                            2024
-                          </a>
+                          <span>
+                            <i className="far fa-calendar-alt"></i> Januar 14, 2024
+                          </span>
                         </li>
 
                       </ul>
                     </div>
                   </div>
                   <div className="item-figure1">
-                    <img src={kiflice} alt="Product" data-aos="fade-fadde" />
+                    <img src={kiflice} alt="Magične kiflice sa džemom od šipurka" data-aos="fade-fadde" />
                   </div>
                   <div className="item-feature">
                     <ul>
@@ -161,13 +160,13 @@ const Recipe1 = () => {
                       <li>
                         <ul className="inner-share">
                           <li>
-                            <a href="https://www.facebook.com/profile.php?id=61554537968449&locale=sr_RS" target='_blank'>
+                            <a href="https://www.facebook.com/profile.php?id=61554537968449&locale=sr_RS" target='_blank' rel="noreferrer">
                               <i className="fab fa-facebook-f"></i>
                             </a>
                           </li>
 
                           <li>
-                            <a href="https://www.instagram.com/slatkamagijaa/" target='_blank'>
+                            <a href="https://www.instagram.com/slatkamagijaa/" target='_blank'  rel="noreferrer">
                               <i className="fab fa-instagram"></i>
                             </a>
                           </li>

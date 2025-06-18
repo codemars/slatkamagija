@@ -32,11 +32,11 @@ const Section1 = () => {
             <div className="col-lg-4 col-md-6 col-sm-6 col-12 mb-5" >
               <div className="product-box-layout1">
                 <figure className="item-figure">
-                  <a href="#">
+                  
                     <Link to="/Recepti/Kiflice">
                       <img src={kiflice} alt="Product" />
                     </Link>
-                  </a>
+                 
                 </figure>
                 <div className="item-content">
 
@@ -49,9 +49,9 @@ const Section1 = () => {
 
                   <ul className="entry-meta">
                     <li>
-                      <a href="#">
+                    
                         <i className="fas fa-clock"></i> Vreme pripreme: 40 Min
-                      </a>
+                      
                     </li>
                   </ul>
                 </div>
@@ -63,11 +63,11 @@ const Section1 = () => {
             <div className="col-lg-4 col-md-6 col-sm-6 col-12 mb-5" >
               <div className="product-box-layout1">
                 <figure className="item-figure">
-                  <a href="#">
+                 
                     <Link to="/Recepti/Palacinke">
                       <img src={palacinke} alt="Product" />
                     </Link>
-                  </a>
+                 
                 </figure>
                 <div className="item-content">
 
@@ -80,9 +80,7 @@ const Section1 = () => {
 
                   <ul className="entry-meta">
                     <li>
-                      <a href="#">
                         <i className="fas fa-clock"></i> Vreme pripreme: 45 Min
-                      </a>
                     </li>
                   </ul>
                 </div>
