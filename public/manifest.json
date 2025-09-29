@@ -1,11 +1,20 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SlatkaMagija",
+  "name": "Slatka Magija – Domaći proizvodi",
   "icons": [
-   
+    {
+      "src": "6.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "6.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#8B0000",
   "background_color": "#ffffff"
 }

@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Magija from "../../assets/logo/logo_jabuka.webp";
-import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import AOS from "aos"; 
 
@@ -12,7 +11,6 @@ const Section1 = () => {
       duration: 1500, // Trajanje animacije u milisekundama
       once: true, // Animacija se dešava samo jednom (ne ponavlja pri ponovnom skrolovanju)
       mirror: true,
-      once: false,
     });
   }, []);
 
