@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Početna stranica -->
+  <url>
+    <loc>https://www.slatkamagija.info/</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Dodaj svoje proizvode ovde -->
+  <!-- Primer: -->
+  <url>
+    <loc>https://www.slatkamagija.info/proizvodi/kakao-krem</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.slatkamagija.info/proizvodi/mesana-marmelada</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dodaj statične stranice -->
+  <url>
+    <loc>https://www.slatkamagija.info/proizvodi/marmelada-od-sipurka</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.slatkamagija.info/proizvodi/mlecni-kakao-krem</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+    <url>
+    <loc>https://www.slatkamagija.info/Recepti/Palacinke</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+     <url>
+    <loc>https://www.slatkamagija.info/Recepti/Kiflice</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+      <url>
+    <loc>https://www.slatkamagija.info/Recepti/Kontakt</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
