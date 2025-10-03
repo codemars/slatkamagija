@@ -13,6 +13,7 @@ const Section1 = () => {
     AOS.init({
       duration: 1500, 
       once: true, 
+        disable: 'mobile',
     
     });
   }, []);

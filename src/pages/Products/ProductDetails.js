@@ -64,7 +64,7 @@ const ProductDetails = () => {
 
               <Col lg={6}>
                 <animated.div style={animation}>
-                  <img src={product.image} alt={product.name} className="image-details" />
+                  <img src={product.image} alt={product.name} className="image-details-1" />
                 </animated.div>
               </Col>
             </Row>

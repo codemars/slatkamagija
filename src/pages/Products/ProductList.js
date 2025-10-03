@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Navigation, Pagination, EffectCoverflow, Mousewheel } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -19,43 +19,20 @@ const ProductList = () => {
     <div className="product-carousel-container">
       <h2 className="carousel-title">Naši proizvodi</h2>
       <Swiper
-        modules={[Navigation, Pagination, EffectCoverflow, Mousewheel]}
+        modules={[Navigation, Pagination]}
         navigation
         pagination={{ clickable: true }}
-        spaceBetween={30}
         slidesPerView={3}
-        effect="coverflow"
-        coverflowEffect={{
-          rotate: 20,
-          slideShadows: false,
-          depth: 100,
-        }}
+        centeredSlides={true}
+        loop={true}
         breakpoints={{
-       
-      // Ekrani od 320px do 639px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    // Ekrani od 640px do 767px
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    // Ekrani od 768px do 1023px
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    // Ekrani 1024px i širi
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 40,
-    },
-  }}
-        
-        mousewheel={true} 
-        
+          320: { slidesPerView: 1, spaceBetween: 10 },
+          640: { slidesPerView: 2, spaceBetween: 20 },
+          768: { slidesPerView: 3, spaceBetween: 30 },
+          1024: { slidesPerView: 3, spaceBetween: 40 },
+        }}
+
+
         slidesOffsetBefore={45}
         className="product-carousel"
       >
@@ -67,15 +44,15 @@ const ProductList = () => {
               </Link>
               <div className="product-details">
                 <h5 className="product-name">{product.name}</h5>
-               
+
               </div>
 
-              
+
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    
+
     </div>
   );
 };
