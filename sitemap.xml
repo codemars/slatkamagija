@@ -12,14 +12,14 @@
   <!-- Dodaj svoje proizvode ovde -->
   <!-- Primer: -->
   <url>
-    <loc>https://www.slatkamagija.info/proizvodi/kakao-krem</loc>
+    <loc>https://www.slatkamagija.info/#/proizvodi/kakao-krem</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.slatkamagija.info/proizvodi/mesana-marmelada</loc>
+    <loc>https://www.slatkamagija.info/#/proizvodi/mesana-marmelada</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -27,34 +27,34 @@
 
   <!-- Dodaj statične stranice -->
   <url>
-    <loc>https://www.slatkamagija.info/proizvodi/marmelada-od-sipurka</loc>
+    <loc>https://www.slatkamagija.info/#/proizvodi/marmelada-od-sipurka</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.slatkamagija.info/proizvodi/mlecni-kakao-krem</loc>
+    <loc>https://www.slatkamagija.info/#/proizvodi/mlecni-kakao-krem</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
     <url>
-    <loc>https://www.slatkamagija.info/Recepti/Palacinke</loc>
+    <loc>https://www.slatkamagija.info/#/Recepti/Palacinke</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
      <url>
-    <loc>https://www.slatkamagija.info/Recepti/Kiflice</loc>
+    <loc>https://www.slatkamagija.info/#/Recepti/Kiflice</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
       <url>
-    <loc>https://www.slatkamagija.info/Recepti/Kontakt</loc>
+    <loc>https://www.slatkamagija.info/#/Recepti/Kontakt</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
