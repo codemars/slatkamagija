@@ -1,4 +1,3 @@
-import React from 'react';
 import Magija from "../../assets/logo/logo_jabuka.webp";
 const LoadingAnimation = () => {
   return (

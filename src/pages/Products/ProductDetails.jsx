@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated } from "@react-spring/web";
 import products from '../../data/products';
 import Layout from "../../components/Layouts/Layout";
+import NotFound from "../NotFound";
 
 const ProductDetails = () => {
 
@@ -35,7 +36,7 @@ const ProductDetails = () => {
 
 
   if (!product) {
-    return <p>Proizvod nije pronađen.</p>;
+    return <NotFound />;
   }
 
   return (

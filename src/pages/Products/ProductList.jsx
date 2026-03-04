@@ -33,7 +33,6 @@ const ProductList = () => {
         }}
 
 
-        slidesOffsetBefore={45}
         className="product-carousel"
       >
         {products.map((product) => (

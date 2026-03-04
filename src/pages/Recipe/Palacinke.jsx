@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Layout from "../../components/Layouts/Layout";
-import kiflice from "../../assets/recipe/kiflice.webp";
+import palacinke from "../../assets/recipe/americke.webp";
 import { useNavigate } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "aos/dist/aos.css";
@@ -28,9 +28,8 @@ const Recipe1 = () => {
                       data-aos="fade-right"
                       className="fas fa-arrow-left arrow-icon"
                       onClick={() => navigate(-1)}
-                      style={{ cursor: "pointer", marginRight: "10px", color: "black", fontSize: "27px" }}
                     ></i>
-                    Magične kiflice sa džemom od šipurka
+                    Magične palačinke sa kakao kremom
                   </h1>
                   <div className="row mb-4 left">
                     <div className="col-xl-9 col-12">
@@ -44,8 +43,8 @@ const Recipe1 = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="item-figure1">
-                    <img src={kiflice} alt="Magične kiflice sa džemom od šipurka" data-aos="fade-fadde" />
+                  <div className="cream">
+                    <img src={palacinke} alt="Američke palačinke sa kakao kremom" data-aos="fade-fadde" />
                   </div>
                   <div className="item-feature">
                     <ul>
@@ -73,7 +72,7 @@ const Recipe1 = () => {
                             </div>
                             <div className="media-body space-sm">
                               <div className="feature-title">Serviranje za</div>
-                              <div className="feature-sub-title">10 osoba</div>
+                              <div className="feature-sub-title">3/4 osobe</div>
                             </div>
                           </div>
                         </div>
@@ -82,13 +81,8 @@ const Recipe1 = () => {
                     </ul>
                   </div>
                   <p className="item-description" data-aos="fade-fade">
-                    Zasladite svoje nepce ovim neodoljivim kiflicama, punjenim
-                    sočnim džemom. Mekane, mirisne i prepune ukusa, ove kiflice
-                    su savršen desert koji će očarati sve ukućane. Uživajte u
-                    njima uz šoljicu toplog čaja ili kao slatki dodatak uz
-                    jutarnju kafu. Jednostavno pripremljene, a neodoljivo
-                    ukusne, ove kiflice će postati omiljeni slatki zalogaj u
-                    vašem domu!
+                    Zasladite svoje nepce ovim neodoljivim palačinkama, savršeno mekanim i punim ukusa.
+                    Bilo da ih punite kremom, džemom ili poslužite s voćem, ove palačinke su klasik koji osvaja na prvi zalogaj. Idealne za doručak, užinu ili lagani desert – uz šoljicu toplog mleka ili kafu. Jednostavno se prave, a njihov ukus budi najlepše uspomene iz detinjstva!
                   </p>
 
                   <div className="making-elements-wrap" data-aos="fade-up">
@@ -100,12 +94,12 @@ const Recipe1 = () => {
                           </h3>
 
                           <ul className="ingredient-list">
-                            <li>300ml ulja</li>
-                            <li>150ml vruce vode</li>
-                            <li>1 prasak za pecivo</li>
-                            <li>cca 500g brasna</li>
-                            <li>cca 200g secera u prahu</li>
-                            <li>1 vanilin secer</li>
+                            <li>2 jaja</li>
+                            <li>300ml mleka</li>
+                            <li>200 ml mineralne vode (ili obične vode)</li>
+                            <li>2 kašike ulja (plus malo za prženje)</li>
+                            <li>Prstohvat soli</li>
+                            <li>200 g brašna</li>
                           </ul>
                         </div>
                       </div>
@@ -123,7 +117,9 @@ const Recipe1 = () => {
                         <div className="serial-number">Korak 1</div>
                         <p>
 
-                          Ukljucite rernu na 200 stepeni.
+                          U velikoj posudi umutite jaja, dodajte mleko, vodu, ulje i prstohvat soli. Dobro promešajte.
+
+
                         </p>
                       </div>
                     </div>
@@ -132,7 +128,7 @@ const Recipe1 = () => {
                         <div className="serial-number">Korak 2</div>
                         <p>
 
-                          Pomesajte vodu i ulje, sipajte prasak za pecivo i promesajte pa dodajte brasno postepeno mesajuci najpre kasikom a zatim i rukom.
+                          Postepeno dodajte brašno, muteći dok ne dobijete glatku smesu bez grudvica. Ostavite da odstoji 10/15 minuta.
                         </p>
                       </div>
                     </div>
@@ -141,7 +137,7 @@ const Recipe1 = () => {
                         <div className="serial-number">Korak 3</div>
                         <p>
 
-                          Testo podelite na 3-4 loptice (ja sam na 2 i dobila sam 16 vecih kiflica, ali mamine male su sladje) pa na pobrasnjenoj dasci najpre rukom oblikujte spljosteni krug a zatim rastanjite oklagijom. Stavite na svaki deo po malo marmelade (ja stavila fenomenalni argentinski sir od dunja) i motajte kiflice koje redjate na pleh sa pek papirom i odmah pecete dok ne porumene. Ako vam se testo lista samo pritisnite prstom tu i tamo; kiflice budu ‘rosave’ kad se ispeku, ali secer to lepo prekrije.
+                          Zagrejte tiganj s malo ulja, sipajte kutlaču smese i ravnomerno rasporedite. Pržite palačinku 1/2 minuta sa svake strane, dok ne dobije zlatnu boju.
                         </p>
                       </div>
                     </div>
@@ -150,7 +146,9 @@ const Recipe1 = () => {
                         <div className="serial-number">Korak 4</div>
                         <p>
 
-                          Vruce kiflice valjajte u prah secer pomesan sa vanilinim secerom.
+                          Gotove palačinke mažite omiljenim nadevom, čokoladnim kremom, džemom, orasima sa šećerom, i uvijajte po želji. Poslužite tople, posute prah šećerom ili prelivenim sirupom.
+
+
                         </p>
                       </div>
                     </div>
@@ -166,7 +164,7 @@ const Recipe1 = () => {
                           </li>
 
                           <li>
-                            <a href="https://www.instagram.com/slatkamagijaa/" target='_blank'  rel="noreferrer">
+                            <a href="https://www.instagram.com/slatkamagijaa/" target='_blank' rel="noreferrer">
                               <i className="fab fa-instagram"></i>
                             </a>
                           </li>
