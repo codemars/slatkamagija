@@ -54,7 +54,7 @@ function Section2() {
               <p data-aos="zoom-in">
               U svaku teglicu unosimo pažljivo odabrane sastojke i prstohvat modernog pristupa. Čuvamo duh tradicije dok gledamo ka budućnosti, stvarajući potpuno prirodne proizvode za zdrav i dug život.
               </p>
-              <Link to="/Proizvodi" className="btn order_now btn_red">
+              <Link to="/proizvodi" className="btn order_now btn_red">
                 Magični proizvodi
               </Link>
             <div>

@@ -38,7 +38,7 @@ const ProductList = () => {
         {products.map((product) => (
           <SwiperSlide key={product.id} className="product-slide">
             <div className="product-item">
-              <Link to={`/Proizvodi/${product.slug}`}>
+              <Link to={`/proizvodi/${product.slug}`}>
                 <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
               </Link>
               <div className="product-details">

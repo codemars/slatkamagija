@@ -33,7 +33,7 @@ const Section1 = () => {
               <div className="product-box-layout1">
                 <figure className="item-figure">
                   
-                    <Link to="/Recepti/Kiflice">
+                    <Link to="/recepti/kiflice">
                       <img src={kiflice} alt="Product" />
                     </Link>
                  
@@ -41,7 +41,7 @@ const Section1 = () => {
                 <div className="item-content">
 
                   <h3 className="item-title" data-aos="fade-right">
-                    <Link to="/Recepti/Kiflice">
+                    <Link to="/recepti/kiflice">
                       Magične kiflice sa džemom od šipurka
                     </Link>
                   </h3>
@@ -64,7 +64,7 @@ const Section1 = () => {
               <div className="product-box-layout1">
                 <figure className="item-figure">
                  
-                    <Link to="/Recepti/Palacinke">
+                    <Link to="/recepti/palacinke">
                       <img src={palacinke} alt="Product" />
                     </Link>
                  
@@ -72,7 +72,7 @@ const Section1 = () => {
                 <div className="item-content">
 
                   <h3 className="item-title" data-aos="fade-right">
-                    <Link to="/Recepti/Palacinke">
+                    <Link to="/recepti/palacinke">
                        Američke palačinke za domaćim kakao kremom
                     </Link>
                   </h3>
